@@ -1,0 +1,36 @@
+# --- General Settings ---
+# Capture the current screen and use it as the background
+screenshots
+# Show the clock and indicator
+clock
+indicator
+
+# --- Time & Date Format ---
+timestr=%H:%M
+datestr=%A, %B %d
+
+# --- Blur & Visual Effects ---
+# "Half-blur": Radius 7 with 5 passes (smooth but not too heavy)
+effect-blur=7x5
+# Add a slight vignette to focus on the center
+effect-vignette=0.5:0.5
+
+# --- Transparent Indicator & Clock Style ---
+# Make the inner circle fully transparent (RGBA: 00000000)
+inside-color=00000000
+inside-ver-color=00000000
+inside-wrong-color=00000000
+inside-clear-color=00000000
+
+# Set the outer ring color (Semi-transparent white)
+ring-color=ffffff33
+ring-ver-color=00bbbbff
+ring-wrong-color=ff5555ff
+
+# Text and Key Highlight colors
+text-color=ffffff
+key-hl-color=880033ff
+
+# --- Layout ---
+indicator-radius=120
+indicator-thickness=10

@@ -1,0 +1,6 @@
+{
+    "css-priority": "user",
+    "style": {
+        "css": "~/.config/swaync/style.css"
+    }
+}

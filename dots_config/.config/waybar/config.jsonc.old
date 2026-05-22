@@ -1,0 +1,273 @@
+// -*- mode: jsonc -*-
+{
+    "layer": "top", // Waybar at top layer
+    "position": "top", // Waybar position (top|bottom|left|right)
+    "height": 0, // Waybar height (to be removed for auto height)
+    // "width": 1280, // Waybar width
+    "margin-top": 0,
+    "margin-left": 12,
+    "margin-right": 12,
+    "spacing": 0, // Gaps between modules
+    // Choose the order of the modules
+    "modules": [
+        "hyprland/workspaces",
+        "custom/power_status",
+        "backlight",
+        "temperature",
+        "network",
+        "memory",
+        "cpu",
+        "battery",
+        "custom/clipboard",
+        "custom/wallpaper",
+        "clock",
+        "tray",
+        "custom/notification"
+    ],
+
+    // "sway/workspaces": {
+    //     "disable-scroll": true,
+    //     "all-outputs": true,
+    //     "format": "{icon}",
+    //     "format-icons": {
+    //     // "focused" 是 Sway 模块中代表当前激活工作区的关键字
+    //     "focused": "",
+    //     "urgent": "" // 紧急状态（比如有消息闪烁时）
+    //     },
+    
+    //     // 这里设置固定显示 1-5 号工作区
+    //     "persistent-workspaces": {
+    //         "1": [], // 空列表 [] 表示在所有显示器上显示
+    //         "2": [],
+    //         "3": [],
+    //         "4": [],
+    //         "5": []
+    //         // 如果只想在特定显示器(如 eDP-1)上显示工作区 5，可以使用: "5": ["eDP-1"]
+    //     }
+    // },
+        
+    "custom/power_status":{
+      "format": "{}",
+      "exec": "~/.config/waybar/script/power_status.sh",
+      "interval": 10
+  },
+
+
+
+    "custom/wallpaper": {
+        "format": "<span color='white'></span>",
+        "on-click": "/home/t3chj4ck/.config/waybar/script/change_wallpaper.sh",
+        "on-click-right": "/home/t3chj4ck/.config/waybar/script/change_wallpaper_rightclick.sh"
+    },
+
+
+    "custom/notification": {
+        "tooltip": false,
+        "format": "{icon}",
+        "format-icons": {
+        "notification": "<span foreground='white'><sup></sup></span>",
+        "none": "",
+        "dnd-notification": "<span foreground='white'><sup></sup></span>",
+        "dnd-none": "",
+        "inhibited-notification": "<span foreground='white'><sup></sup></span>",
+        "inhibited-none": "",
+        "dnd-inhibited-notification": "<span foreground='white'><sup></sup></span>",
+        "dnd-inhibited-none": ""
+        },
+        "return-type": "json",
+        "exec-if": "which swaync-client",
+        "exec": "swaync-client -swb",
+        "on-click": "swaync-client -t -sw",
+        "on-click-right": "swaync-client -d -sw",
+        "escape": true
+    },
+
+    "keyboard-state": {
+        "numlock": true,
+        "capslock": true,
+        "format": "{name} {icon}",
+        "format-icons": {
+            "locked": "",
+            "unlocked": ""
+        }
+    },
+
+	"custom/clipboard": {
+        "format": "<span color='white'></span>",
+        "on-click": "clipman pick -t rofi && notify-send 'done copy'"
+    },
+
+
+    "hyprland/window": {
+    "separate-outputs": true
+	},
+
+    
+    // "hyprland/workspaces": {
+    //         "on-click": "activate",
+    //         "all-outputs": true,
+    //         "format": "{icon}",
+    //         "format-icons": {
+    //               "default": "",
+    //               "1": "1",
+    //               "2": "2",
+    //               "3": "3",
+    //               "4": "4",
+    //               "5": "5",
+    //           },
+    //         "persistent_workspaces": {
+    //               "1": [],
+    //               "2": [],
+    //               "3": [],
+    //               "4": [],
+    //               "5": []
+    //           }
+    //       },
+  "hyprland/workspaces": {
+    "on-scroll-up": "hyprctl dispatch workspace r-1",
+    "on-scroll-down": "hyprctl dispatch workspace r+1",
+    "on-click": "activate",
+    "active-only": false,
+    "all-outputs": true,
+    "format": "{}",
+    "format-icons": {
+      "urgent": "",
+      "active": "",
+      "default": ""
+    },
+    "persistent-workspaces": {
+      "*": 5
+    }
+  },
+
+    "sway/mode": {
+        "format": "<span style=\"italic\">{}</span>"
+    },
+    "sway/scratchpad": {
+        "format": "{icon} {count}",
+        "show-empty": false,
+        "format-icons": ["", ""],
+        "tooltip": true,
+        "tooltip-format": "{app}: {title}"
+    },
+    "mpd": {
+        "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ {volume}% ",
+        "format-disconnected": "Disconnected ",
+        "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped ",
+        "unknown-tag": "N/A",
+        "interval": 10,
+        "consume-icons": {
+            "on": " "
+        },
+        "random-icons": {
+            "off": "<span color=\"#f53c3c\"></span> ",
+            "on": " "
+        },
+        "repeat-icons": {
+            "on": " "
+        },
+        "single-icons": {
+            "on": "1 "
+        },
+        "state-icons": {
+            "paused": "",
+            "playing": ""
+        },
+        "tooltip-format": "MPD (connected)",
+        "tooltip-format-disconnected": "MPD (disconnected)"
+    },
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": "",
+            "deactivated": ""
+        }
+    },
+    "tray": {
+        // "icon-size": 21,
+        "spacing": 6
+    },
+    "clock": {
+        // "timezone": "America/New_York",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%Y-%m-%d}"
+    },
+    "cpu": {
+        "format": "{usage}% ",
+        "tooltip": false,
+        "interval": 10
+    },
+    "memory": {
+        "format": "{}% ",
+        "interval": 10
+    },
+    "temperature": {
+        // "thermal-zone": 1,
+        // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+        "critical-threshold": 80,
+        // "format-critical": "{temperatureC}°C {icon}",
+        "format": "{temperatureC}°C {icon}",
+        "format-icons": [""],
+        "interval": 10
+    },
+    "backlight": {
+        // "device": "acpi_video1",
+        "format": "{percent}% {icon}",
+        "format-icons": ["", "", "", "", "", "", "", "", ""]
+    },
+    "battery": {
+        "states": {
+            // "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}% {icon}",
+        "format-full": "{capacity}% {icon}",
+        "format-charging": "{capacity}% ",
+        "format-plugged": "{capacity}% ",
+        "format-alt": "{time} {icon}",
+        // "format-good": "", // An empty format will hide the module
+        // "format-full": "",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "battery#bat2": {
+        "bat": "BAT2"
+    },
+    "power-profiles-daemon": {
+      "format": "{icon}",
+      "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+      "tooltip": true,
+      "format-icons": {
+        "default": "",
+        "performance": "",
+        "balanced": "",
+        "power-saver": ""
+      }
+    },
+    "network": {
+        // "interface": "wlp2*", // (Optional) To force the use of this interface
+        "format-wifi": "{essid} ({signalStrength}%) ",
+        "format-ethernet": "{ipaddr}/{cidr} ",
+        "tooltip-format": "{ifname} via {gwaddr} ",
+        "format-linked": "{ifname} (No IP) ",
+        "format-disconnected": "Disconnected ⚠",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+    },
+    "custom/media": {
+        "format": "{icon} {}",
+        "return-type": "json",
+        "max-length": 40,
+        "format-icons": {
+            "spotify": "",
+            "default": "🎜"
+        },
+        "escape": true,
+        "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
+        // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
+    },
+    "custom/power": {
+        "format": " ⏻ ",
+        "tooltip": false,
+        "on-click": "wlogout --protocol layer-shell"
+    }
+}

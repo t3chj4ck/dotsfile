@@ -1,0 +1,12 @@
+.notification-center {
+    background-color: rgba(40, 40, 40, 1); /* 完全不透明 */
+}
+
+.notification {
+    background-color: rgba(30, 30, 30, 1); /* 完全不透明 */
+}
+
+/* 可选：移除所有透明度 */
+* {
+    opacity: 1;
+}

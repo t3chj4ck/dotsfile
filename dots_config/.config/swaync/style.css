@@ -1,0 +1,137 @@
+/* 全局重置与基础样式 */
+* {
+  all: unset;
+  font-size: 14px;
+  font-family: "Monocraft Nerd font";
+  transition: 200ms;
+}
+
+/* 进度条与滑动条：白底黑边，确保可见 */
+trough highlight {
+  background: #ffffff;
+}
+
+scale trough {
+  margin: 0rem 1rem;
+  background-color: #333333;
+  min-height: 8px;
+  min-width: 70px;
+}
+
+slider {
+  background-color: #ffffff;
+}
+
+/* --- 悬浮通知样式 --- */
+.floating-notifications.background .notification-row .notification-background {
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.8), inset 0 0 0 1px #ffffff;
+  margin: 18px;
+  background-color: #000000;
+  color: #ffffff; /* 默认文字纯白 */
+  padding: 0;
+}
+
+.floating-notifications.background .notification-row .notification-background .notification .notification-content .summary,
+.floating-notifications.background .notification-row .notification-background .notification .notification-content .time,
+.floating-notifications.background .notification-row .notification-background .notification .notification-content .body {
+  color: #ffffff; /* 确保通知正文可见 */
+}
+
+/* 按钮：平时白底黑字，悬停反转 */
+.notification-action {
+  color: #000000 !important;
+  background-color: #ffffff !important;
+  margin: 7px;
+}
+
+.notification-action:hover {
+  background-color: #333333 !important;
+  color: #ffffff !important;
+}
+
+/* --- 控制中心样式 --- */
+.control-center {
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.8), inset 0 0 0 1px #ffffff;
+  margin: 18px;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 14px;
+}
+
+.control-center .widget-title > label {
+  color: #ffffff;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+/* 控制中心内的通知条目 */
+.control-center .notification-row .notification-background {
+  color: #ffffff;
+  background-color: #111111; /* 深色背景 */
+  box-shadow: inset 0 0 0 1px #45475a;
+  margin-top: 14px;
+}
+
+/* 关键：悬停时内部内容背景变白，文字变黑 */
+.control-center .notification-row .notification-background:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.control-center .notification-row .notification-background:hover .summary,
+.control-center .notification-row .notification-background:hover .time,
+.control-center .notification-row .notification-background:hover .body {
+  color: #000000;
+}
+
+/* 关闭按钮：红色保持警示，悬停加深 */
+.close-button {
+  margin: 7px;
+  padding: 2px;
+  color: #000000;
+  background-color: #f38ba8;
+}
+
+.close-button:hover {
+  background-color: #ff4f81;
+}
+
+/* --- 插件与组件 --- */
+.widget-dnd > switch {
+  background: #000000;
+  border: 1px solid #ffffff;
+}
+
+.widget-dnd > switch:checked {
+  background: #ffffff;
+}
+
+.widget-dnd > switch slider {
+  background: #ffffff;
+}
+
+.widget-dnd > switch:checked slider {
+  background: #000000;
+}
+
+.widget-mpris .widget-mpris-player {
+  background: #111111;
+  color: #ffffff;
+  padding: 7px;
+}
+
+/* 亮度与音量标签：使用高饱和度颜色确保在黑底上清晰 */
+.widget-volume label {
+  font-size: 1.2rem;
+  color: #00e5ff; 
+}
+
+.widget-backlight label {
+  font-size: 1.2rem;
+  color: #ffeb3b;
+}
+
+.control-center .widget-label > label {
+  color: #ffffff;
+  font-size: 2rem;
+}
