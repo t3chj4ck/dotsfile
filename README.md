@@ -7,5 +7,5 @@
 |shell|zsh|
 |terminal multiplexer|tmux/zellij|
 
-looks:
-!(./view.png)
+
+![looks:](./view.png)
