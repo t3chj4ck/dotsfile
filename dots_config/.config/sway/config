@@ -1,4 +1,4 @@
-output eDP-1 scale 1.2
+output eDP-1 scale 1.25
 set $mod Mod4
 set $term alacritty
 set $menu rofi -show run
@@ -95,6 +95,11 @@ set $ws8 "8"
 set $ws9 "9"
 set $ws10 "0"
 
+
+bindsym $mod+Shift+minus move scratchpad
+
+bindsym $mod+minus scratchpad show
+
 bindsym $mod+1 workspace number $ws1
 bindsym $mod+2 workspace number $ws2
 bindsym $mod+3 workspace number $ws3
@@ -131,12 +136,12 @@ input "type:keyboard" {
 bindsym $mod+Shift+r reload
 bindsym $mod+m exit
 
-
+#app list
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway XDG_MENU_PREFIX=arch-
 
-
-exec swayidle -w timeout 600 swaylock -i ~/Pictures/wallpaper/76753b229bd8a398d9ab26a3a6eb7f87.jpg
-exec swayidle -w before-sleep 'swaylock -f -c 000000'
+exec swayidle -w \
+    timeout 600 'swaylock -f -c 000000' \
+    before-sleep 'swaylock -f -c 000000'
 
 
 
@@ -149,6 +154,4 @@ input "type:pointer" {
     accel_profile flat
     pointer_accel 0
 }
-
-for_window [title="Live Caption"] floating enable
 

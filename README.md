@@ -2,12 +2,12 @@
 
 | | |
 | :--- | :--- |
-|windows manager|sway/hyprland|
+|windows manager|sway|
+|texteditor|helix|
 |bar|waybar|
 |shell|zsh|
-|terminal multiplexer|tmux/zellij|
+|terminal multiplexer|tmux|
 |terminal|alacritty|
 |session manager|ly|
-|filemanager|nautilus/yazi|
 
 ![looks:](./view.png)

@@ -1,8 +1,8 @@
 export ZSH="$HOME/.oh-my-zsh"
 
 
-
-export EDITOR=nvim
+export PATH="$PATH:/home/t3chj4ck/.dotnet/tools"
+export EDITOR=helix
 source $ZSH/oh-my-zsh.sh
 
 

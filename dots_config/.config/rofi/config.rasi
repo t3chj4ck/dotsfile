@@ -1,10 +1,1 @@
-//@theme "/usr/share/rofi/themes/glue_pro_blue.rasi"
-
-*{
-	font: "JetBrainsMono Nerd Font 12";
-}
-
-
-//@theme "/usr/share/rofi/themes/gruvbox-dark.rasi"
-
-@theme "/usr/share/rofi/themes/Arc.rasi"
+@theme "/usr/share/rofi/themes/dmenu.rasi"
