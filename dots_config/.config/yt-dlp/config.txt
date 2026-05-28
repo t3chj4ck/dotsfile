@@ -1,0 +1,8 @@
+--cookies-from-browser chromium
+
+-o "~/Music/%(title)s.%(ext)s"
+
+--extract-audio
+--audio-format mp3
+--embed-thumbnail
+--embed-metadata
