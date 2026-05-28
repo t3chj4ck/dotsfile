@@ -1,4 +1,4 @@
-theme = "gruvbox-material"
+theme = "gruvbox_dark_hard"
 
 
 [keys.select]

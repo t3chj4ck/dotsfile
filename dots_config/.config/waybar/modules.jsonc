@@ -1,207 +1,185 @@
 // -*- mode: jsonc -*-
 {
-    "custom/power_status":{
-      "format": "{}]",
-      "exec": "~/.config/waybar/script/power_status.sh",
-      "interval": 10
+  "custom/power_status": {
+    "format": "{}]",
+    "exec": "~/.config/waybar/script/power_status.sh",
+    "interval": 10
   },
-
-
-
-    "custom/wallpaper": {
-        "format": "󰸉",
-        "on-click": "/home/t3chj4ck/.config/waybar/script/change_wallpaper.sh",
-        "on-click-right": "/home/t3chj4ck/.config/waybar/script/change_wallpaper_rightclick.sh"
-    },
-
-    
-    "custom/notification": {
-        "tooltip": false,
-        "format": "{icon}",
-        "format-icons": {
-        "notification": "<span foreground='white'><sup></sup></span>",
-        "none": "",
-        "dnd-notification": "<span foreground='white'><sup></sup></span>",
-        "dnd-none": "",
-        "inhibited-notification": "<span foreground='white'><sup></sup></span>",
-        "inhibited-none": "",
-        "dnd-inhibited-notification": "<span foreground='white'><sup></sup></span>",
-        "dnd-inhibited-none": ""
-        },
-        "return-type": "json",
-        "exec-if": "which swaync-client",
-        "exec": "swaync-client -swb",
-        "on-click": "swaync-client -t -sw",
-        "on-click-right": "swaync-client -d -sw",
-        "escape": true
-    },
-
-
-    "hyprland/workspaces": {
-        "format": "[{icon} {name}]",
-        "on-click": "activate",
-        "persistent-workspaces": {
-            "*": 9
-        },
-        "format-icons": {
-            "active": "*",
-            "default": "^",
-            "empty":""
-        }
-    },
-
-    "hyprland/window": {
-        "format": "[{}]",
-        "max-length": 40,
-        "separate-outputs": true
-    },
-
-
-
-    "sway/workspaces": {
-        "disable-scroll": true,
-        "all-outputs": true,
-        "format": "[{icon} {name}]",
-        "on-click": "activate",
-        "format-icons": {
-            "focused": "*",
-            "urgent": "!",
-            "default": ""
-        }
-    },
-
-
-
-    "sway/window": {
-        "format": "[{title}]",
-        "max-length": 40,
-        "all-outputs": false
+  "custom/wallpaper": {
+    "format": "󰸉",
+    "on-click": "/home/t3chj4ck/.config/waybar/script/change_wallpaper.sh",
+    "on-click-right": "/home/t3chj4ck/.config/waybar/script/change_wallpaper_rightclick.sh"
   },
-
-
-
-
-
-    "tray": {
-        "spacing": 5
+  "custom/notification": {
+    "tooltip": false,
+    "format": "{icon}",
+    "format-icons": {
+      "notification": "<span foreground='white'><sup></sup></span>",
+      "none": "",
+      "dnd-notification": "<span foreground='white'><sup></sup></span>",
+      "dnd-none": "",
+      "inhibited-notification": "<span foreground='white'><sup></sup></span>",
+      "inhibited-none": "",
+      "dnd-inhibited-notification": "<span foreground='white'><sup></sup></span>",
+      "dnd-inhibited-none": ""
     },
-
-    "clock": {
-        "format": "[{:%a %b %d %H:%M %Y}]",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    "return-type": "json",
+    "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+    "on-click": "swaync-client -t -sw",
+    "on-click-right": "swaync-client -d -sw",
+    "escape": true
+  },
+  "hyprland/workspaces": {
+    "format": "[{icon} {name}]",
+    "on-click": "activate",
+    "persistent-workspaces": {
+      "*": 9
     },
-
-    "backlight": {
-        // "device": "acpi_video1",
-
-        "format": "[{icon} {percent}%]",
-        "format-icons": ["󰍹"]
-    },
-
-    "temperature": {
-        // "thermal-zone": 1,
-        // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
-        "critical-threshold": 80,
-        // "format-critical": "{temperatureC}°C {icon}",
-        "format": "[{icon} {temperatureC}°C]",
-        "format-icons": [""],
-        "interval": 10
-    },
-
-
-
-    "network": {
-        // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format":"[{}]",
-        "format-wifi": "[ {essid} ({signalStrength}%)]",
-        "format-ethernet": "[ {ipaddr}/{cidr}]",
-        "tooltip-format": "[ {ifname} via {gwaddr}]",
-        "format-linked": "[ {ifname} (No IP)]",
-        "format-disconnected": "[Disconnected ⚠]",
-        "format-alt": "[ {ifname}: {ipaddr}/{cidr}]"
-    },
-
-    "memory": {
-        "format": "[ {}%]",
-        "interval": 10
-    },
-
-    "cpu": {
-        "format": "[ {usage}%]",
-        "tooltip": false,
-        "interval": 10
-    },
-
-    "battery": {
-        "states": {
-            // "good": 95,
-            "warning": 30,
-            "critical": 15
-        },
-        "format": "[{icon} {capacity}%",
-        "format-full": "[󱟢 {capacity}%",
-        "format-charging": "[ {capacity}%",
-        "format-plugged": "[ {capacity}%",
-        "format-alt": "[{icon} {time}",
-        "format-icons": ["󰁺", "󰁼", "󰁿", "󰂁", "󱟢"]
-    },
-
-    "mpris": {
-        "format": "[{player_icon} {artist} - {title}]",
-        "format-paused": "[{player_icon} <i>{artist} - {title} (paused)</i>]",
-        "player-icons": {
-            "default": "▶",
-            "spotify": "",
-            "firefox": "",
-            "mpv": ""
-        },
-        "status-icons": {
-            "paused": "⏸"
-        },
-        "max-length": 40
-    },
-
-    "pulseaudio": {
-        // "scroll-step": 1, // %, can be a float
-        "format": "[{icon} {volume}%]",
-        "format-bluetooth": "[ {volume}%]",
-        "format-bluetooth-muted": "[ {icon}]",
-        "format-muted": "[ {format_source}]",
-        "format-icons": {
-            "headphone": "",
-            "hands-free": "",
-            "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
-            "default": ["", "", ""]
-        },
-        "on-click": "pavucontrol" // Click to open volume mixer
-    },
-
-    "custom/weather":{
-        "format":"[{}]",
-        "exec": "~/.config/waybar/script/weather.sh",
-        "interval": "3600"
-    },
-
-    "custom/gpu_freq":{
-      "format":"[ {}]",
-      "exec":"~/.config/waybar/script/gpu_freq.sh",
-      "interval":"5"
-    },
-
-
-    "power-profiles-daemon": {
-        "format": "[{profile}]",
-        "tooltip-format": "[{profile}]\n[{driver}]",
-        "tooltip": true,
-        "format-icons": {
-            "default": "",
-            "performance": "🚀", // 高性能模式图标
-            "balanced": "⚖️",     // 平衡模式图标
-            "power-saver": "🌱"   // 省电模式图标
-        }
+    "format-icons": {
+      "active": "*",
+      "default": "^",
+      "empty": ""
     }
-
+  },
+  "hyprland/window": {
+    "format": "[{}]",
+    "max-length": 40,
+    "separate-outputs": true
+  },
+  "sway/workspaces": {
+    "disable-scroll": true,
+    "all-outputs": true,
+    "format": "[{icon}{name}]",
+    "on-click": "activate",
+    "format-icons": {
+      "focused": "*",
+      "urgent": "!",
+      "default": ""
+    }
+  },
+  "sway/window": {
+    "format": "[{title}]",
+    "max-length": 40,
+    "all-outputs": false
+  },
+  "tray": {
+    "spacing": 5
+  },
+  "clock": {
+    "format": "[{:%a %b %d %H:%M %Y}]",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+  },
+  "backlight": {
+    // "device": "acpi_video1",
+    "format": "[{icon} {percent}%]",
+    "format-icons": [
+      "󰍹"
+    ]
+  },
+  "temperature": {
+    // "thermal-zone": 1,
+    // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+    "critical-threshold": 80,
+    // "format-critical": "{temperatureC}°C {icon}",
+    "format": "[{icon} {temperatureC}°C]",
+    "format-icons": [
+      ""
+    ],
+    "interval": 10
+  },
+  "network": {
+    // "interface": "wlp2*", // (Optional) To force the use of this interface
+    "format": "[{}]",
+    "format-wifi": "[ {essid} ({signalStrength}%)]",
+    "format-ethernet": "[ {ipaddr}/{cidr}]",
+    "tooltip-format": "[ {ifname} via {gwaddr}]",
+    "format-linked": "[ {ifname} (No IP)]",
+    "format-disconnected": "[Disconnected ⚠]",
+    "format-alt": "[ {ifname}: {ipaddr}/{cidr}]"
+  },
+  "memory": {
+    "format": "[ {}%]",
+    "interval": 10
+  },
+  "cpu": {
+    "format": "[ {usage}%]",
+    "tooltip": false,
+    "interval": 10
+  },
+  "battery": {
+    "states": {
+      // "good": 95,
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "[{icon} {capacity}%",
+    "format-full": "[󱟢 {capacity}%",
+    "format-charging": "[ {capacity}%",
+    "format-plugged": "[ {capacity}%",
+    "format-alt": "[{icon} {time}",
+    "format-icons": [
+      "󰁺",
+      "󰁼",
+      "󰁿",
+      "󰂁",
+      "󱟢"
+    ]
+  },
+  "mpris": {
+    "format": "[{player_icon} {artist} - {title}]",
+    "format-paused": "[{player_icon} <i>{artist} - {title} (paused)</i>]",
+    "player-icons": {
+      "default": "▶",
+      "spotify": "",
+      "firefox": "",
+      "mpv": ""
+    },
+    "status-icons": {
+      "paused": "⏸"
+    },
+    "max-length": 40
+  },
+  "pulseaudio": {
+    // "scroll-step": 1, // %, can be a float
+    "format": "[{icon} {volume}%]",
+    "format-bluetooth": "[ {volume}%]",
+    "format-bluetooth-muted": "[ {icon}]",
+    "format-muted": "[ {format_source}]",
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": [
+        "",
+        "",
+        ""
+      ]
+    },
+    "on-click": "pavucontrol" // Click to open volume mixer
+  },
+  "custom/weather": {
+    "format": "[{}]",
+    "exec": "~/.config/waybar/script/weather.sh",
+    "interval": "3600"
+  },
+  "custom/gpu_freq": {
+    "format": "[ {}]",
+    "exec": "~/.config/waybar/script/gpu_freq.sh",
+    "interval": "5"
+  },
+  "power-profiles-daemon": {
+    "format": "[{profile}]",
+    "tooltip-format": "[{profile}]\n[{driver}]",
+    "tooltip": true,
+    "format-icons": {
+      "default": "",
+      "performance": "🚀", // 高性能模式图标
+      "balanced": "⚖️", // 平衡模式图标
+      "power-saver": "🌱" // 省电模式图标
+    }
+  }
 }

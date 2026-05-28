@@ -1,8 +1,7 @@
 export ZSH="$HOME/.oh-my-zsh"
 
-
-export PATH="$PATH:/home/t3chj4ck/.dotnet/tools"
-export EDITOR=helix
+export PATH="$PATH:/home/t3chj4ck/script"
+export EDITOR=nvim
 source $ZSH/oh-my-zsh.sh
 
 
@@ -68,9 +67,29 @@ zinit load zsh-users/zsh-syntax-highlighting
 
 #tmux
 if [[ -z "$TMUX" && "$TERM" != "linux" && $- == *i* ]]; then
-    tmux new-session -A -s tmux_main
-fi
+    BASE_SESSION="tmux_main"
+    # session name (PID)
+    CLIENT_SESSION="${BASE_SESSION}_$$"
 
+    # session already exist?
+    if ! tmux has-session -t "$BASE_SESSION" 2>/dev/null; then
+        # A: first terminal
+        # 1.creat main session
+        tmux new-session -c "$PWD" -s "$BASE_SESSION" -d
+        
+        # 2. client session
+        tmux new-session -t "$BASE_SESSION" -s "$CLIENT_SESSION" -d
+        
+    else
+        # B: not the first terminal
+        # creat client session
+        tmux new-session -t "$BASE_SESSION" -s "$CLIENT_SESSION" -d
+       	#new window 
+        tmux new-window -t "$CLIENT_SESSION" -c "$PWD"
+    fi
+	#attach
+    tmux attach-session -t "$CLIENT_SESSION" -x
+fi
 #PROMPT
 
 PROMPT='%B%K{cyan}%F{#000000}%n@%m%k%f %K{red}%F{#000000}%~%k%b%f $ '
