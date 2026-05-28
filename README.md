@@ -3,11 +3,10 @@
 | | |
 | :--- | :--- |
 |windows manager|sway|
-|texteditor|helix|
+|texteditor|neovim|
 |bar|waybar|
 |shell|zsh|
 |terminal multiplexer|tmux|
 |terminal|alacritty|
-|session manager|ly|
 
 ![looks:](./view.png)
