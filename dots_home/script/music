@@ -1,0 +1,104 @@
+#!/usr/bin/env bash
+
+# Configuration
+MUSIC_DIR="$HOME/Music/default_list"
+PLAYLIST_FILE="$HOME/.config/mpd/playlists/default_list.m3u"
+PLAYLIST_NAME=$(basename "$PLAYLIST_FILE" .m3u)
+
+# Audio file extensions
+AUDIO_EXTS=(-name "*.mp3")
+
+# --- Core sync function ---
+sync_mpd() {
+    echo "🎵 Scanning $MUSIC_DIR and updating database..."
+    mkdir -p "$(dirname "$PLAYLIST_FILE")"
+    
+    # Find all audio files and write to playlist
+    find "$MUSIC_DIR" -type f \( "${AUDIO_EXTS[@]}" \) | sort > "$PLAYLIST_FILE"
+    
+    # Force MPD sync
+    mpc update --wait > /dev/null
+    mpc clear > /dev/null
+    mpc load "$PLAYLIST_NAME" > /dev/null
+    echo "✅ Playlist synchronized successfully!"
+}
+
+# --- Get all music files ---
+get_music_files() {
+    find "$MUSIC_DIR" -type f \( "${AUDIO_EXTS[@]}" \) | sort
+}
+
+# --- Stop music playback ---
+stop_music() {
+    echo "🛑 Stopping music playback..."
+    mpc stop > /dev/null 2>&1
+    mpc clear > /dev/null 2>&1
+    echo "✅ Music stopped and playlist cleared."
+}
+
+# --- Open yazi for file management ---
+open_yazi_manager() {
+    if ! command -v yazi >/dev/null 2>&1; then
+        echo "❌ yazi not found. Please install it first."
+        exit 1
+    fi
+    
+    echo "📁 Opening yazi in $MUSIC_DIR..."
+    echo "   Make your changes, then press 'q' to exit yazi"
+    
+    # Open yazi in the music directory
+    yazi "$MUSIC_DIR"
+    
+    # After yazi closes, sync the playlist
+    echo "🔄 Changes detected, syncing playlist..."
+    sync_mpd
+}
+
+# --- Argument handling ---
+case "$1" in
+    --get-list)
+        sync_mpd
+        ;;
+        
+    --list)
+        open_yazi_manager
+        ;;
+        
+    --stop)
+        stop_music
+        ;;
+        
+    --tui)
+        if command -v ncmpcpp >/dev/null 2>&1; then
+            exec ncmpcpp
+        else
+            echo "❌ ncmpcpp not found. Install it first."
+            exit 1
+        fi
+        ;;
+        
+    --backend)
+        if mpc play > /dev/null 2>&1; then
+            echo "▶️ Playback started silently."
+        else
+            echo "❌ Failed to start MPD playback."
+            exit 1
+        fi
+        ;;
+        
+    --help|-h)
+        echo "Usage: music [OPTION]"
+        echo "  --get-list   Scan directory and force playlist refresh"
+        echo "  --list       Open yazi file manager for music directory (auto-sync on exit)"
+        echo "  --stop       Stop music playback and clear playlist"
+        echo "  --tui        Launch ncmpcpp TUI client"
+        echo "  --backend    Start silent playback in background"
+        echo "  --help       Show this help message"
+        ;;
+        
+    *)
+        echo "❌ Unknown option: $1"
+        echo "Try 'music --help' for usage."
+        exit 1
+        ;;
+esac
