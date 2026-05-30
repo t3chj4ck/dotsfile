@@ -10,8 +10,23 @@ vim.opt.rtp:prepend(lazypath)
 
 
 --pulgin download
+
+
+
+
+
+
 require("lazy").setup({
+
+
+
+
 	"tpope/vim-commentary", --fast comment
+
+
+
+
+
 	{
 		"nvim-lualine/lualine.nvim",
 		config = function() require("lualine").setup() end
@@ -123,25 +138,25 @@ require("lazy").setup({
 		}
 	}, --find text
 
-	{
-		"rcarriga/nvim-notify",
-		config = function()
-			local notify = require("notify")
+	-- {
+	-- 	"rcarriga/nvim-notify",
+	-- 	config = function()
+	-- 		local notify = require("notify")
 
-			-- take over notify
-			vim.notify = notify
+	-- 		-- take over notify
+	-- 		vim.notify = notify
 
-			-- hide warn
-			vim.notify = function(msg, log_level, opts)
-				-- （WARN = 3）
-				if msg:match("Neo%-tree") and log_level == 3 then
-					return
-				end
-				-- pop erro msg etd..
-				notify(msg, log_level, opts)
-			end
-		end
-	},
+	-- 		-- hide warn
+	-- 		vim.notify = function(msg, log_level, opts)
+	-- 			-- （WARN = 3）
+	-- 			-- if msg:match("Neo%-tree") and log_level == 3 then
+	-- 			-- 	return
+	-- 			-- end
+	-- 			-- pop erro msg etd..
+	-- 			notify(msg, log_level, opts)
+	-- 		end
+	-- 	end
+	-- },
 
 
 	{

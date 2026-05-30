@@ -2,6 +2,9 @@ export ZSH="$HOME/.oh-my-zsh"
 
 export PATH="$PATH:/home/t3chj4ck/script"
 export EDITOR=nvim
+export DISPLAY=:0
+
+
 source $ZSH/oh-my-zsh.sh
 
 
