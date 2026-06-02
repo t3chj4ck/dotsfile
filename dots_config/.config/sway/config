@@ -1,6 +1,6 @@
 output eDP-1 scale 1.25
 set $mod Mod4
-set $term alacritty
+set $term ghostty
 set $menu rofi -show run
 
 
@@ -28,7 +28,7 @@ exec clash-verge &
 
 floating_modifier $mod
 
-bindsym Print exec --no-startup-id exec sh -c 'mkdir -p ~/Pictures/Screenshots && grim -g "$(slurp)" - | tee ~/Pictures/Screenshots/$(date +%Y-%m-%d_%H-%m-%S).png | wl-copy && notify-send "screenshot"'
+bindsym Print exec --no-startup-id exec bash -c 'mkdir -p ~/Pictures/Screenshots && grim -g "$(slurp)" - | tee ~/Pictures/Screenshots/$(date +%Y-%m-%d_%H-%m-%S).png | wl-copy && notify-send "screenshot"'
 
 
 
