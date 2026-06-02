@@ -172061,3 +172061,53 @@
 2026-05-30T06:47:30 player: played "brown_noise/Brown Noise - 528 Hz LPF (Loopable Version).mp3"
 2026-06-02T14:17:22 player: played "default_list/90.mp3"
 2026-06-02T14:21:51 player: played "default_list/90.mp3"
+2026-06-02T14:51:16 player: played "brown_noise/Brown Noise - 528 Hz LPF (Loopable Version).mp3"
+2026-06-02T15:57:12 exception: No such directory
+2026-06-02T15:57:14 exception: No such directory
+2026-06-02T15:57:16 exception: No such directory
+2026-06-02T15:59:19 exception: Access to local files via TCP is not allowed
+2026-06-02T15:59:56 exception: Access to local files via TCP is not allowed
+2026-06-02T15:59:56 exception: Access to local files via TCP is not allowed
+2026-06-02T15:59:57 exception: Access to local files via TCP is not allowed
+2026-06-02T16:00:14 update: added default_list/are you sleeping alone again？.mp3
+2026-06-02T16:00:14 update: added default_list/demxntia - fall in love again ♡.mp3
+2026-06-02T16:00:14 update: added default_list/close your eyes.mp3
+2026-06-02T16:00:14 update: added default_list/glaive - the prom (official lyric video).mp3
+2026-06-02T16:00:14 update: added default_list/Cupid.mp3
+2026-06-02T16:00:14 update: added default_list/Hatsune Miku - Rolling Girl PV (English Subs).mp3
+2026-06-02T16:00:14 update: added default_list/Calling To The Night.mp3
+2026-06-02T16:00:14 update: added default_list/starfall - feelings (Official Audio).mp3
+2026-06-02T16:00:14 update: added default_list/1999 WRITE THE FUTURE, LØREN - Gasoline (Official Music Video).mp3
+2026-06-02T16:00:14 update: added default_list/missing u.mp3
+2026-06-02T16:00:14 update: added default_list/The Best Is Yet To Come.mp3
+2026-06-02T16:00:14 update: added default_list/say “i love you”.mp3
+2026-06-02T16:00:14 update: added default_list/Meltdown.mp3
+2026-06-02T16:00:14 update: added default_list/What the Hell (feat. Adriana Figueroa, Annapantsu, Rachie, Chi-Chi, Cami-Cat, Kathy-Chan,....mp3
+2026-06-02T16:00:14 update: added default_list/scaPEGoat.mp3
+2026-06-02T16:00:14 update: added default_list/Nuclear.mp3
+2026-06-02T16:00:21 player: played "default_list/Not Your Kind of People.mp3"
+2026-06-02T16:00:27 player: played "default_list/are you sleeping alone again？.mp3"
+2026-06-02T16:06:22 player: played "default_list/scaPEGoat.mp3"
+2026-06-02T16:08:14 player: played "default_list/missing u.mp3"
+2026-06-02T16:09:51 player: played "default_list/Crow (Edit).mp3"
+2026-06-02T16:12:39 player: played "default_list/Verbatim.mp3"
+2026-06-02T16:14:50 player: played "default_list/demxntia - fall in love again ♡.mp3"
+2026-06-02T16:17:59 player: played "default_list/close your eyes.mp3"
+2026-06-02T16:23:00 player: played "default_list/Cupid.mp3"
+2026-06-02T16:27:24 player: played "default_list/lie.mp3"
+2026-06-02T16:33:58 player: played "default_list/BROKEN ENGLISH.mp3"
+2026-06-02T16:38:26 player: played "default_list/A Letter.mp3"
+2026-06-02T16:41:42 player: played "default_list/Calling To The Night.mp3"
+2026-06-02T16:44:16 player: played "default_list/Good Kid - From The Start (Official Lyric Video).mp3"
+2026-06-02T16:47:04 player: played "default_list/Luke Darling - Santa Fe (Official Lyric Video).mp3"
+2026-06-02T16:52:45 player: played "default_list/Meltdown.mp3"
+2026-06-02T16:56:23 player: played "default_list/are you sleeping alone again？.mp3"
+2026-06-02T17:00:36 player: played "default_list/Do You Feel It？.mp3"
+2026-06-02T17:03:57 player: played "default_list/A Letter.mp3"
+2026-06-02T17:04:13 player: played "default_list/Luke Darling - Santa Fe (Official Lyric Video).mp3"
+2026-06-02T17:04:18 player: played "brown_noise/Brown Noise (Loop).mp3"
+2026-06-02T17:04:18 exception: Number too large: -1
+2026-06-02T17:07:47 player: played "default_list/La Di Frickin Da.mp3"
+2026-06-02T17:12:00 player: played "default_list/Do You Feel It？.mp3"
+2026-06-02T17:14:48 player: played "default_list/Luke Darling - Santa Fe (Official Lyric Video).mp3"
+2026-06-02T17:16:54 player: played "default_list/say “i love you”.mp3"

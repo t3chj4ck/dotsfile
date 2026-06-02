@@ -28,8 +28,7 @@ exec clash-verge &
 
 floating_modifier $mod
 
-bindsym Print exec --no-startup-id exec bash -c 'mkdir -p ~/Pictures/Screenshots && grim -g "$(slurp)" - | tee ~/Pictures/Screenshots/$(date +%Y-%m-%d_%H-%m-%S).png | wl-copy && notify-send "screenshot"'
-
+bindsym Print exec bash -c 'mkdir -p ~/Pictures/Screenshots && sleep 0.1 && grim -g "$(slurp)" - | tee ~/Pictures/Screenshots/$(date +%F_%H-%M-%S).png | wl-copy && notify-send "screenshot"'
 
 
 #clipboard
