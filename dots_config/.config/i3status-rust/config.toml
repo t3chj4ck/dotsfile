@@ -1,0 +1,77 @@
+[theme]
+theme = "plain" 
+
+[theme.overrides]
+idle_fg = "#ffffff"
+warning_fg = "#ffff00"
+critical_fg = "#ff0000"
+
+[[block]]
+block = "custom"
+command = "~/script/get_window_name.sh"
+interval = 1
+
+
+[[block]]
+block = "music"
+format = "$icon {$player: $title|}"
+
+
+[[block]]
+block = "custom"
+command = "bash ~/script/weather.sh"
+interval = 600
+
+
+[[block]]
+block = "memory"
+format = "$icon $mem_total_used_percents.eng(w:2)"
+format_alt = "$icon_swap $swap_used_percents.eng(w:2)"
+
+
+[[block]]
+block = "cpu"
+interval = 10
+format = "$icon $utilization"
+
+[[block]]
+block = "battery"
+interval = 10
+format = "$icon $percentage"
+
+[[block]]
+block = "custom"
+command = "bash ~/script/power_status.sh"
+interval = 10
+
+
+[[block]]
+block = "backlight"
+format = "$icon $brightness"
+
+
+[[block]]
+block = "sound"
+[[block.click]]
+button = "left"
+cmd = "pavucontrol"
+
+[[block]]
+block = "time"
+interval = 10
+format = "$timestamp.datetime(f:'%a %d/%m %R')"
+
+
+[[block]]
+block = "custom"
+command = "echo 󰸉"
+interval = "once"
+[[block.click]]
+button = "left"
+cmd = "bash ~/script/change_wallpaper.sh"
+[[block.click]]
+button = "right"
+cmd = "bash ~/script/change_wallpaper_rightclick.sh"
+
+
+

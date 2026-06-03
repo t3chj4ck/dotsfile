@@ -19,7 +19,6 @@ archlinux-keyring
 archlinux-xdg-menu
 argon2
 at-spi2-core
-atkmm
 attr
 audit
 autoconf
@@ -48,14 +47,12 @@ ca-certificates
 ca-certificates-mozilla
 ca-certificates-utils
 cairo
-cairomm
 cairomm-1.16
 capstone
 cdparanoia
 cfitsio
 chromaprint
 cifs-utils
-cinnamon-desktop
 clang
 clucene
 compiler-rt
@@ -100,8 +97,8 @@ elfutils
 ell
 enchant
 ex-vi-compat
-exempi
 exiv2
+exo
 expat
 faad2
 fakeroot
@@ -156,7 +153,6 @@ glib-networking
 glib2
 glib2-devel
 glibc
-glibmm
 glibmm-2.68
 glm
 glslang
@@ -172,8 +168,6 @@ gperftools
 gpgme
 gpgmepp
 gpm
-gpsd
-granite7
 graphene
 graphite
 grep
@@ -190,14 +184,12 @@ gst-plugins-base-libs
 gst-plugins-good
 gstreamer
 gtest
-gtk-layer-shell
 gtk-update-icon-cache
 gtk-vnc
 gtk3
 gtk4
 gtk4-layer-shell
 gtkmm-4.0
-gtkmm3
 gtksourceview4
 guile
 gupnp
@@ -443,6 +435,7 @@ hypridle
 hyprlang
 hyprutils
 hyprwayland-scanner
+i3status-rust
 iana-etc
 icu
 imath
@@ -458,9 +451,9 @@ jansson
 jasper
 jbigkit
 jemalloc
+jq
 json-c
 json-glib
-jsoncpp
 kbd
 kdbusaddons
 keyutils
@@ -632,16 +625,15 @@ libfreehand
 libfyaml
 libgcc
 libgcrypt
-libgee
 libgexiv2
 libgfortran
 libgirepository
 libgit2
 libglvnd
 libgme
-libgnomekbd
 libgomp
 libgpg-error
+libgtop
 libgudev
 libgusb
 libheif
@@ -744,7 +736,6 @@ libseccomp
 libsecret
 libshout
 libsidplayfp
-libsigc++
 libsigc++-3.0
 libsixel
 libslirp
@@ -815,6 +806,8 @@ libxdamage
 libxdmcp
 libxdp
 libxext
+libxfce4ui
+libxfce4util
 libxfixes
 libxft
 libxi
@@ -822,7 +815,6 @@ libxinerama
 libxkbcommon
 libxkbcommon-x11
 libxkbfile
-libxklavier
 libxml2
 libxmlb
 libxmu
@@ -905,8 +897,6 @@ nano
 ncdu
 ncurses
 ndctl
-nemo
-nemo-fileroller
 neon
 neovim
 netstandard-targeting-pack
@@ -949,7 +939,6 @@ pam
 pambase
 pandoc-cli
 pango
-pangomm
 pangomm-2.48
 parted
 patch
@@ -993,8 +982,8 @@ pipewire-pulse
 pipewire-session-manager
 pixman
 pkgconf
-playerctl
 polkit
+polkit-gnome
 poppler
 poppler-data
 poppler-glib
@@ -1002,7 +991,6 @@ popt
 portaudio
 power-profiles-daemon
 ppp
-pps-tools
 procps-ng
 protobuf
 psmisc
@@ -1015,7 +1003,6 @@ python-gobject
 python-idna
 python-packaging
 python-requests
-python-setproctitle
 python-urllib3
 qemu-audio-alsa
 qemu-audio-dbus
@@ -1109,7 +1096,6 @@ sord
 sound-theme-freedesktop
 source-highlight
 spandsp
-spdlog
 speex
 speexdsp
 spice
@@ -1129,7 +1115,6 @@ suitesparse
 svt-av1
 sway
 swayidle
-swaync
 swtpm
 systemd
 systemd-libs
@@ -1141,6 +1126,7 @@ tcpdump
 tdb
 terminus-font
 texinfo
+thunar
 tig
 tinysparql
 tmux
@@ -1192,7 +1178,6 @@ vulkan-icd-loader
 vulkan-mesa-implicit-layers
 vulkan-radeon
 wavpack
-waybar
 wayland
 wayland-protocols
 webkit2gtk-4.1
@@ -1211,8 +1196,6 @@ wpa_supplicant
 wqy-zenhei
 x264
 x265
-xapp
-xapp-symbolic-icons
 xcb-imdkit
 xcb-proto
 xcb-util
@@ -1230,10 +1213,10 @@ xdg-desktop-portal-wlr
 xdg-user-dirs
 xdg-utils
 xf86-video-amdgpu
+xfconf
 xfsprogs
 xkeyboard-config
 xmlsec
-xorg-xkbcomp
 xorg-xprop
 xorg-xrandr
 xorgproto

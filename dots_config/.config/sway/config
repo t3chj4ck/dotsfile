@@ -11,6 +11,12 @@ client.focused #ffffff #ffffff #ffffff #ffffff
 
 
 
+bar {
+    status_command i3status-rs ~/.config/i3status-rust/config.toml
+    position top
+	tray_output none
+}
+
 
 exec waybar &
 exec fcitx5 &
@@ -48,7 +54,7 @@ bindsym $mod+Shift+up move up
 bindsym $mod+Shift+right move right
 bindsym $mod+f fullscreen toggle
 bindsym $mod+h layout toggle split
-bindsym $mod+e exec nemo
+bindsym $mod+e exec thunar
 bindsym $mod+space floating toggle
 bindsym $mod+a focus parent
 
