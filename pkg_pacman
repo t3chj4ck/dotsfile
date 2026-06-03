@@ -165,6 +165,7 @@ gperftools
 gpgme
 gpgmepp
 gpm
+granite7
 graphene
 graphite
 grep
@@ -185,6 +186,7 @@ gtk-update-icon-cache
 gtk-vnc
 gtk3
 gtk4
+gtk4-layer-shell
 gtkmm-4.0
 gtksourceview4
 guile
@@ -624,6 +626,7 @@ libfreehand
 libfyaml
 libgcc
 libgcrypt
+libgee
 libgexiv2
 libgfortran
 libgirepository
@@ -1115,6 +1118,7 @@ suitesparse
 svt-av1
 sway
 swayidle
+swaync
 swtpm
 systemd
 systemd-libs
