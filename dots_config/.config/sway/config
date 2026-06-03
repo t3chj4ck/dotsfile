@@ -1,6 +1,6 @@
 output eDP-1 scale 1.25
 set $mod Mod4
-set $term ghostty
+set $term kitty
 set $menu rofi -show run
 
 

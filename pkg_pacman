@@ -141,9 +141,6 @@ gegl
 gettext
 gfxstream
 ghc-libs
-ghostty
-ghostty-shell-integration
-ghostty-terminfo
 giflib
 gimp
 git
@@ -188,7 +185,6 @@ gtk-update-icon-cache
 gtk-vnc
 gtk3
 gtk4
-gtk4-layer-shell
 gtkmm-4.0
 gtksourceview4
 guile
@@ -458,6 +454,9 @@ kbd
 kdbusaddons
 keyutils
 kitemviews
+kitty
+kitty-shell-integration
+kitty-terminfo
 kmod
 krb5
 kvantum
@@ -730,6 +729,7 @@ libraw1394
 libreoffice-fresh
 librevenge
 librsvg
+librsync
 libsamplerate
 libsasl
 libseccomp

@@ -61,6 +61,12 @@ block = "time"
 interval = 10
 format = "$timestamp.datetime(f:'%a %d/%m %R')"
 
+[[block]]
+block = "net"
+format = "$icon {$signal_strength $ssid $frequency|Wired connection}"
+interval = 10
+
+
 
 [[block]]
 block = "custom"
