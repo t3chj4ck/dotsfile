@@ -1,0 +1,8 @@
+max-visible=5
+anchor=top-right
+background-color=#000000
+text-color=#ffffff
+border-size=2
+border-color=#ffffff
+default-timeout=5000
+

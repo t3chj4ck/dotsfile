@@ -4,9 +4,9 @@
 | :--- | :--- |
 |windows manager|sway|
 |texteditor|neovim|
-|bar|waybar|
+|bar|swaybar+i3status-rust|
 |shell|zsh|
 |terminal multiplexer|tmux|
-|terminal|alacritty|
+|terminal|kitty|
 
 ![looks:](./view.png)

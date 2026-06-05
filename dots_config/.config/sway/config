@@ -1,6 +1,6 @@
 output eDP-1 scale 1.25
 set $mod Mod4
-set $term kitty
+set $term ghostty --gtk-single-instance=true
 set $menu rofi -show run
 
 
@@ -25,9 +25,10 @@ exec blueman-applet &
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 exec wl-paste -t text --watch clipman store --max-items=100 --no-persist &
 exec wl-gammarelay-rs &
-exec swaync &
+exec mako &
 exec awww-daemon &
 exec clash-verge &
+exec ghostty --gtk-single-instance=true --quit-after-last-window-closed=false --initial-window=false
 
 
 

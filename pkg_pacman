@@ -141,6 +141,9 @@ gegl
 gettext
 gfxstream
 ghc-libs
+ghostty
+ghostty-shell-integration
+ghostty-terminfo
 giflib
 gimp
 git
@@ -600,6 +603,7 @@ libdatrie
 libdbusmenu-glib
 libdbusmenu-gtk3
 libde265
+libdecor
 libdeflate
 libdisplay-info
 libdovi
@@ -610,6 +614,7 @@ libdvdread
 libe-book
 libebur128
 libedit
+libei
 libelf
 libepoxy
 libepubgen
@@ -620,6 +625,7 @@ libexif
 libexttextcat
 libfdk-aac
 libffi
+libfontenc
 libfprint
 libfreeaptx
 libfreehand
@@ -805,6 +811,7 @@ libxcomposite
 libxcrypt
 libxcrypt-compat
 libxcursor
+libxcvt
 libxdamage
 libxdmcp
 libxdp
@@ -812,6 +819,7 @@ libxext
 libxfce4ui
 libxfce4util
 libxfixes
+libxfont2
 libxft
 libxi
 libxinerama
@@ -874,6 +882,7 @@ lzo
 m4
 mailcap
 make
+mako
 marisa
 mc
 md4c
@@ -1216,13 +1225,20 @@ xdg-desktop-portal-gtk
 xdg-desktop-portal-wlr
 xdg-user-dirs
 xdg-utils
+xf86-input-libinput
 xf86-video-amdgpu
 xfconf
 xfsprogs
 xkeyboard-config
 xmlsec
+xorg-fonts-encodings
+xorg-server
+xorg-server-common
+xorg-setxkbmap
+xorg-xkbcomp
 xorg-xprop
 xorg-xrandr
+xorg-xwayland
 xorgproto
 xvidcore
 xxhash

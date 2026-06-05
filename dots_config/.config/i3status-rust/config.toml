@@ -1,5 +1,9 @@
 [theme]
 theme = "plain" 
+[icons]
+icons = "material-nf"
+
+
 
 [theme.overrides]
 idle_fg = "#ffffff"
@@ -11,19 +15,16 @@ block = "custom"
 command = "~/script/get_window_name.sh"
 interval = 1
 [block.theme_overrides]
-idle_bg = "#123456"
-
+idle_bg = "#015778"
 
 
 [[block]]
 block = "music"
-format = " $icon {$player: $title|} "
-
 
 [[block]]
 block = "custom"
 command = "bash ~/script/weather.sh"
-interval = 600
+interval = "once"
 
 
 [[block]]
@@ -66,10 +67,9 @@ format = " $timestamp.datetime(f:'%a %d/%m %R') "
 
 [[block]]
 block = "net"
-format = " $icon {$signal_strength $ssid $frequency|Wired connection} "
+device = "^(enp|ens|enx|eth|wlp|wlan)"
+format = " $icon {$signal_strength $ssid} "
 interval = 10
-
-
 
 [[block]]
 block = "custom"

@@ -2,7 +2,6 @@ sw_volume: 0
 audio_device_state:1:My MPD PulseAudio
 audio_device_state:1:my_fifo
 state: stop
-current: 19
 random: 1
 repeat: 0
 single: 0
@@ -45,6 +44,6 @@ playlist_begin
 30:default_list/Rokutouseino Yoru.mp3
 31:default_list/Peter McPoland - Digital Silence (.mp4).mp3
 32:default_list/scaPEGoat.mp3
-33:default_list/Little One.mp3
-34:default_list/Nuclear.mp3
+33:default_list/Nuclear.mp3
+34:default_list/Little One.mp3
 playlist_end
