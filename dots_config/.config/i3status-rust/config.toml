@@ -1,14 +1,13 @@
 [theme]
-theme = "plain" 
+theme = "srcery" 
 [icons]
 icons = "material-nf"
 
 
-
-[theme.overrides]
-idle_fg = "#ffffff"
-warning_fg = "#ffff00"
-critical_fg = "#ff0000"
+# [theme.overrides]
+# idle_fg = "#ffffff"
+# warning_fg = "#ffff00"
+# critical_fg = "#ff0000"
 
 [[block]]
 block = "custom"
@@ -16,10 +15,6 @@ command = "~/script/get_window_name.sh"
 interval = 1
 [block.theme_overrides]
 idle_bg = "#015778"
-
-
-[[block]]
-block = "music"
 
 [[block]]
 block = "custom"
@@ -37,6 +32,12 @@ format_alt = "$icon_swap $swap_used_percents.eng(w:2)"
 block = "cpu"
 interval = 10
 format = " $icon $utilization "
+
+[[block]]
+block = "temperature"
+interval = 10
+format = " $icon $max"
+
 
 [[block]]
 block = "battery"
@@ -64,6 +65,7 @@ cmd = "pavucontrol"
 block = "time"
 interval = 10
 format = " $timestamp.datetime(f:'%a %d/%m %R') "
+
 
 [[block]]
 block = "net"

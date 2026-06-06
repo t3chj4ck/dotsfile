@@ -19,6 +19,7 @@ archlinux-keyring
 archlinux-xdg-menu
 argon2
 at-spi2-core
+atkmm
 attr
 audit
 autoconf
@@ -47,6 +48,7 @@ ca-certificates
 ca-certificates-mozilla
 ca-certificates-utils
 cairo
+cairomm
 cairomm-1.16
 capstone
 cdparanoia
@@ -66,7 +68,6 @@ db5.3
 dbus
 dbus-broker
 dbus-broker-units
-dbus-glib
 dbus-units
 dconf
 debugedit
@@ -103,24 +104,24 @@ expat
 faad2
 fakeroot
 fastfetch
+fcft
 fcitx5
 fcitx5-chinese-addons
 fcitx5-configtool
 fcitx5-gtk
 fcitx5-qt
 ffmpeg
-ffmpeg4.4
 fftw
 file
 file-roller
 filesystem
 findutils
-firefox
 flac
 flex
 fluidsynth
 fmt
 fontconfig
+foot
 fprintd
 freeglut
 freetype2
@@ -141,9 +142,6 @@ gegl
 gettext
 gfxstream
 ghc-libs
-ghostty
-ghostty-shell-integration
-ghostty-terminfo
 giflib
 gimp
 git
@@ -153,6 +151,7 @@ glib-networking
 glib2
 glib2-devel
 glibc
+glibmm
 glibmm-2.68
 glm
 glslang
@@ -168,6 +167,7 @@ gperftools
 gpgme
 gpgmepp
 gpm
+gpsd
 granite7
 graphene
 graphite
@@ -185,12 +185,14 @@ gst-plugins-base-libs
 gst-plugins-good
 gstreamer
 gtest
+gtk-layer-shell
 gtk-update-icon-cache
 gtk-vnc
 gtk3
 gtk4
 gtk4-layer-shell
 gtkmm-4.0
+gtkmm3
 gtksourceview4
 guile
 gupnp
@@ -455,6 +457,7 @@ jemalloc
 jq
 json-c
 json-glib
+jsoncpp
 kbd
 kdbusaddons
 keyutils
@@ -675,7 +678,6 @@ libmakepkg-dropins
 libmanette
 libmbim
 libmd
-libmfx
 libmikmod
 libmm-glib
 libmms
@@ -745,6 +747,7 @@ libseccomp
 libsecret
 libshout
 libsidplayfp
+libsigc++
 libsigc++-3.0
 libsixel
 libslirp
@@ -880,7 +883,6 @@ ly
 lz4
 lzo
 m4
-mailcap
 make
 mako
 marisa
@@ -951,6 +953,7 @@ pam
 pambase
 pandoc-cli
 pango
+pangomm
 pangomm-2.48
 parted
 patch
@@ -994,6 +997,7 @@ pipewire-pulse
 pipewire-session-manager
 pixman
 pkgconf
+playerctl
 polkit
 polkit-gnome
 poppler
@@ -1003,6 +1007,7 @@ popt
 portaudio
 power-profiles-daemon
 ppp
+pps-tools
 procps-ng
 protobuf
 psmisc
@@ -1108,6 +1113,7 @@ sord
 sound-theme-freedesktop
 source-highlight
 spandsp
+spdlog
 speex
 speexdsp
 spice
@@ -1191,6 +1197,7 @@ vulkan-icd-loader
 vulkan-mesa-implicit-layers
 vulkan-radeon
 wavpack
+waybar
 wayland
 wayland-protocols
 webkit2gtk-4.1
@@ -1225,14 +1232,12 @@ xdg-desktop-portal-gtk
 xdg-desktop-portal-wlr
 xdg-user-dirs
 xdg-utils
-xf86-input-libinput
 xf86-video-amdgpu
 xfconf
 xfsprogs
 xkeyboard-config
 xmlsec
 xorg-fonts-encodings
-xorg-server
 xorg-server-common
 xorg-setxkbmap
 xorg-xkbcomp
