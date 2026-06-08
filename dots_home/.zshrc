@@ -1,9 +1,10 @@
 export ZSH="$HOME/.oh-my-zsh"
 export PATH="$PATH:/home/t3chj4ck/.dotnet/tools/"
 export PATH="$PATH:/home/t3chj4ck/script"
+export PATH="$PATH:/home/t3chj4ck/.cargo/bin"
 export EDITOR=nvim
 export DISPLAY=:0
-
+export XDG_SESSION_TYPE=wayland
 
 source $ZSH/oh-my-zsh.sh
 

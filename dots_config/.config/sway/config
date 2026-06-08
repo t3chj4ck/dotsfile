@@ -28,13 +28,13 @@ exec wl-gammarelay-rs &
 exec mako &
 exec awww-daemon &
 exec clash-verge &
-
+exec autotiling
 
 
 
 floating_modifier $mod
 
-bindsym Print exec bash -c 'mkdir -p ~/Pictures/Screenshots && sleep 0.1 && grim -g "$(slurp)" - | tee ~/Pictures/Screenshots/$(date +%F_%H-%M-%S).png | wl-copy && notify-send "screenshot"'
+bindsym Print exec bash -c 'mkdir -p ~/Pictures/Screenshots && grim -g "$(slurp)" - | tee ~/Pictures/Screenshots/$(date +%F_%H-%M-%S).png | wl-copy && notify-send "screenshot"'
 
 
 #clipboard

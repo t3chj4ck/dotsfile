@@ -24,6 +24,7 @@ attr
 audit
 autoconf
 automake
+autotiling
 avahi
 awww
 ayatana-ido
@@ -163,6 +164,7 @@ gnulib-l10n
 gnupg
 gnutls
 gobject-introspection-runtime
+gparted
 gperftools
 gpgme
 gpgmepp
@@ -1017,10 +1019,13 @@ python-cairo
 python-certifi
 python-charset-normalizer
 python-gobject
+python-i3ipc
 python-idna
 python-packaging
 python-requests
+python-six
 python-urllib3
+python-xlib
 qemu-audio-alsa
 qemu-audio-dbus
 qemu-audio-jack

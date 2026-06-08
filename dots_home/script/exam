@@ -1,0 +1,8 @@
+#/bin/bash
+
+virt-manager --connect qemu:///system --show-domain-console virtio-win &
+chromium --url https://www.google.com &
+
+disown -a
+
+pkill foot

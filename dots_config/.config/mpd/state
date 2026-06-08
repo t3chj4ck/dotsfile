@@ -2,7 +2,6 @@ sw_volume: 0
 audio_device_state:1:My MPD PulseAudio
 audio_device_state:1:my_fifo
 state: stop
-current: 5
 random: 1
 repeat: 0
 single: 0
@@ -29,38 +28,4 @@ playlist_begin
 14:brown_noise/Sleepful Soft Brown Noise.mp3
 15:brown_noise/Soft Brown Noise Sleep Therapy To Repeat for 10 Hours.mp3
 16:brown_noise/Soothing Brown Noise Waves.mp3
-17:brown_noise/Brown Noise (Loop).mp3
-18:brown_noise/Brown Noise (Loopable).mp3
-19:brown_noise/Brown Noise - 528 Hz LPF (Loopable Version).mp3
-20:brown_noise/Brown Noise 12 Hours Dreamy Atmosphere.mp3
-21:brown_noise/Brown Noise Loop.mp3
-22:brown_noise/Brown Noise.mp3
-23:brown_noise/Brown Soft Noise for Sleep.mp3
-24:brown_noise/Deep Brown Noise Meditation.mp3
-25:brown_noise/Deep Dream (Brown Noise).mp3
-26:brown_noise/Dream of Brown Noise Sounds for Unique REM.mp3
-27:brown_noise/Dreaming of Brown Noise.mp3
-28:brown_noise/Dreamy Brown Noise.mp3
-29:brown_noise/Dreamy Drifts of Brown Noise (Loopable).mp3
-30:brown_noise/Relaxing Brown Noise 256 Hz Smooth Q (Seamless).mp3
-31:brown_noise/Sleepful Soft Brown Noise.mp3
-32:brown_noise/Soft Brown Noise Sleep Therapy To Repeat for 10 Hours.mp3
-33:brown_noise/Soothing Brown Noise Waves.mp3
-34:brown_noise/Brown Noise (Loop).mp3
-35:brown_noise/Brown Noise (Loopable).mp3
-36:brown_noise/Brown Noise - 528 Hz LPF (Loopable Version).mp3
-37:brown_noise/Brown Noise 12 Hours Dreamy Atmosphere.mp3
-38:brown_noise/Brown Noise Loop.mp3
-39:brown_noise/Brown Noise.mp3
-40:brown_noise/Brown Soft Noise for Sleep.mp3
-41:brown_noise/Deep Brown Noise Meditation.mp3
-42:brown_noise/Deep Dream (Brown Noise).mp3
-43:brown_noise/Dream of Brown Noise Sounds for Unique REM.mp3
-44:brown_noise/Dreaming of Brown Noise.mp3
-45:brown_noise/Dreamy Brown Noise.mp3
-46:brown_noise/Dreamy Drifts of Brown Noise (Loopable).mp3
-47:brown_noise/Relaxing Brown Noise 256 Hz Smooth Q (Seamless).mp3
-48:brown_noise/Sleepful Soft Brown Noise.mp3
-49:brown_noise/Soft Brown Noise Sleep Therapy To Repeat for 10 Hours.mp3
-50:brown_noise/Soothing Brown Noise Waves.mp3
 playlist_end
