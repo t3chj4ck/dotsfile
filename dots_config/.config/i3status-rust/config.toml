@@ -1,14 +1,21 @@
 [theme]
-theme = "srcery" 
+theme = "plain"
+
+
 [icons]
 icons = "material-nf"
 
+
+
 [[block]]
-block = "custom"
-command = "~/script/get_window_name.sh"
-interval = 1
-[block.theme_overrides]
-idle_bg = "#015778"
+block = "focused_window"
+[block.format]
+full = " ____________________________________________________________________________________________________________________________$title |"
+short = " ___________________________________________________________________________________________________________________________$title.str(max_w:15) |"
+
+
+# [[block]]
+# block = "music"
 
 [[block]]
 block = "custom"
@@ -18,8 +25,8 @@ interval = "once"
 
 [[block]]
 block = "memory"
-format = " $icon $mem_total_used_percents.eng(w:2) "
-format_alt = "$icon_swap $swap_used_percents.eng(w:2)"
+format = " $icon $mem_total_used_percents.eng(w:2)| "
+format_alt = " $icon_swap $swap_used_percents.eng(w:2)| "
 
 
 
@@ -27,28 +34,28 @@ format_alt = "$icon_swap $swap_used_percents.eng(w:2)"
 [[block]]
 block = "cpu"
 interval = 10
-format = " $icon $utilization "
+format = " $icon $utilization |"
 
 [[block]]
 block = "temperature"
 interval = 10
-format = " $icon $max"
+format = " $icon $max |"
 
 
 [[block]]
 block = "custom"
 command = "powerprofilesctl get"
 interval = "once"
+signal = 10  # Arbitrary signal number to force update
 
 [[block.click]]
 button = "left"
-cmd = "~/script/toggle-power"
-update = true
+cmd = "bash ~/script/toggle-power && pkill -RTMIN+10 i3status-rs"
 
 [[block]]
 block = "battery"
 interval = 10
-format = " $icon $percentage "
+format = " $icon $percentage |"
 
 [[block]]
 block = "custom"
@@ -58,7 +65,7 @@ interval = 10
 
 [[block]]
 block = "backlight"
-format = " $icon $brightness "
+format = " $icon $brightness |"
 
 
 [[block]]
@@ -70,7 +77,7 @@ cmd = "pavucontrol"
 [[block]]
 block = "time"
 interval = 10
-format = " $timestamp.datetime(f:'%a %d/%m %R') "
+format = " $timestamp.datetime(f:'%a %d/%m %R') |"
 
 
 [[block]]

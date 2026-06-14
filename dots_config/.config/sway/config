@@ -15,6 +15,9 @@ bar {
     status_command i3status-rs ~/.config/i3status-rust/config.toml
     position top
 	tray_output none
+    colors {
+        background #000000
+    }	
 }
 
 
@@ -54,7 +57,7 @@ bindsym $mod+Shift+up move up
 bindsym $mod+Shift+right move right
 bindsym $mod+f fullscreen toggle
 bindsym $mod+h layout toggle split
-bindsym $mod+e exec thunar
+bindsym $mod+e exec nemo
 bindsym $mod+space floating toggle
 bindsym $mod+a focus parent
 
@@ -78,15 +81,6 @@ bindsym XF86AudioPrev exec playerctl previous
 #redlight
 bindsym $mod+Mod1+up exec busctl --user -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateTemperature n +500 && notify-send -h string:x-canonical-private-synchronous:sys-notify -u low -t 1000 "Screen Temperature" "$(busctl --user get-property rs.wl-gammarelay / rs.wl.gammarelay Temperature | awk '{print $2"K"}')"
 bindsym $mod+Mod1+down exec busctl --user -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateTemperature n -500 && notify-send -h string:x-canonical-private-synchronous:sys-notify -u low -t 1000 "Screen Temperature" "$(busctl --user get-property rs.wl-gammarelay / rs.wl.gammarelay Temperature | awk '{print $2"K"}')"
-
-
-#swayfx
-# blur enable
-# blur_xray enable
-# corner_radius 20
-# shadows enable
-# shadow_blur_radius 25
-# shadow_color  8c00ffee ex
 
 
 set $ws1 "1"

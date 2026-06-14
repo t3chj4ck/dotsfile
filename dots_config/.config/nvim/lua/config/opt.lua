@@ -11,6 +11,9 @@ vim.api.nvim_create_autocmd("BufWritePre", {
 })
 
 
+-- disable theme
+vim.cmd([[hi Normal guibg=NONE ctermbg=NONE]])
+
 vim.wo.number = true
 
 
