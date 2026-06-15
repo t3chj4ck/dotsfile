@@ -465,9 +465,6 @@ kbd
 kdbusaddons
 keyutils
 kitemviews
-kitty
-kitty-shell-integration
-kitty-terminfo
 kmod
 krb5
 kvantum
@@ -628,7 +625,6 @@ libluv
 liblzf
 libmad
 libmakepkg-dropins
-libmanette
 libmbim
 libmd
 libmikmod
@@ -694,7 +690,6 @@ libraw1394
 libreoffice-fresh
 librevenge
 librsvg
-librsync
 libsamplerate
 libsasl
 libseccomp
@@ -862,6 +857,7 @@ ncdu
 ncurses
 ndctl
 nemo
+nemo-fileroller
 neon
 neovim
 netstandard-targeting-pack
@@ -1148,7 +1144,6 @@ vulkan-radeon
 wavpack
 wayland
 wayland-protocols
-webkit2gtk-4.1
 webp-pixbuf-loader
 webrtc-audio-processing-1
 wget
@@ -1157,7 +1152,6 @@ wildmidi
 wireplumber
 wl-clipboard
 wlroots0.20
-woff2
 woff2-font-awesome
 wolfssl
 wpa_supplicant
@@ -1176,7 +1170,6 @@ xcb-util-keysyms
 xcb-util-renderutil
 xcb-util-wm
 xcur2png
-xdg-dbus-proxy
 xdg-desktop-portal
 xdg-desktop-portal-gtk
 xdg-desktop-portal-wlr

@@ -1,4 +1,4 @@
-output eDP-1 scale 1.25
+output eDP-1 scale 1.5
 set $mod Mod4
 set $term foot
 set $menu rofi -show run
@@ -30,7 +30,6 @@ exec wl-paste -t text --watch clipman store --max-items=100 --no-persist &
 exec wl-gammarelay-rs &
 exec mako &
 exec awww-daemon &
-exec clash-verge &
 exec autotiling
 
 

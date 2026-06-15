@@ -1,5 +1,8 @@
 [theme]
 theme = "plain"
+[theme.overrides]
+idle_fg = "#FFFFFF"
+info_fg = "#FFFFFF"
 
 
 [icons]
