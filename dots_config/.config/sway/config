@@ -1,4 +1,4 @@
-output eDP-1 scale 1.5
+output eDP-1 scale 1.25
 set $mod Mod4
 set $term foot
 set $menu rofi -show run
@@ -21,13 +21,12 @@ bar {
 }
 
 
-# exec waybar &
 exec fcitx5 &
 exec nm-applet &
 exec blueman-applet &
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
-exec wl-paste -t text --watch clipman store --max-items=100 --no-persist &
-exec wl-gammarelay-rs &
+exec wl-paste --type text --watch cliphist store
+exec wl-paste --type image --watch cliphist store
 exec mako &
 exec awww-daemon &
 exec autotiling
@@ -40,9 +39,7 @@ bindsym Print exec bash -c 'mkdir -p ~/Pictures/Screenshots && grim -g "$(slurp)
 
 
 #clipboard
-bindsym $mod+v exec "clipman pick -t rofi && notify-send 'done copy'"
-
-
+bindsym $mod+v exec cliphist list | rofi -dmenu -p "clipboard history" | cliphist decode | wl-copy
 bindsym $mod+q exec $term
 bindsym $mod+r exec $menu
 bindsym Mod1+F4 kill
@@ -77,9 +74,18 @@ bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioPrev exec playerctl previous
 
 
-#redlight
-bindsym $mod+Mod1+up exec busctl --user -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateTemperature n +500 && notify-send -h string:x-canonical-private-synchronous:sys-notify -u low -t 1000 "Screen Temperature" "$(busctl --user get-property rs.wl-gammarelay / rs.wl.gammarelay Temperature | awk '{print $2"K"}')"
-bindsym $mod+Mod1+down exec busctl --user -- call rs.wl-gammarelay / rs.wl.gammarelay UpdateTemperature n -500 && notify-send -h string:x-canonical-private-synchronous:sys-notify -u low -t 1000 "Screen Temperature" "$(busctl --user get-property rs.wl-gammarelay / rs.wl.gammarelay Temperature | awk '{print $2"K"}')"
+#gamma
+
+
+
+
+
+
+
+
+
+
+
 
 
 set $ws1 "1"
@@ -138,7 +144,7 @@ bindsym $mod+m exit
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway XDG_MENU_PREFIX=arch-
 
 exec swayidle -w \
-    timeout 600 'swaylock -f -c 000000' \
+    timeout 600 '~/script/blur_lock.sh' \
     before-sleep 'swaylock -f -c 000000'
 
 

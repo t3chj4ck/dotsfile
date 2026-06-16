@@ -2,9 +2,13 @@ export ZSH="$HOME/.oh-my-zsh"
 export PATH="$PATH:/home/t3chj4ck/.dotnet/tools/"
 export PATH="$PATH:/home/t3chj4ck/script"
 export PATH="$PATH:/home/t3chj4ck/.cargo/bin"
+export XDG_DATA_DIRS="$XDG_DATA_DIRS:$HOME/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share"
 export EDITOR=nvim
 export DISPLAY=:0
 export XDG_SESSION_TYPE=wayland
+
+
+
 
 source $ZSH/oh-my-zsh.sh
 

@@ -1,6 +1,7 @@
 7zip
 aalib
 abseil-cpp
+accountsservice
 acl
 ada
 adwaita-cursors
@@ -52,14 +53,16 @@ cairomm
 cairomm-1.16
 capstone
 cdparanoia
-cfitsio
 chromaprint
+chromium
 cifs-utils
 cinnamon-desktop
 clang
+cliphist
 clucene
 cmake
 compiler-rt
+composefs
 containerd
 coreutils
 cpio
@@ -84,6 +87,7 @@ dmidecode
 dnsmasq
 docker
 docker-compose
+dosfstools
 dotnet-host
 dotnet-runtime
 dotnet-runtime-8.0
@@ -121,6 +125,7 @@ filesystem
 findutils
 firefox
 flac
+flatpak
 flex
 fluidsynth
 fmt
@@ -151,8 +156,6 @@ ghc-libs
 giflib
 gimp
 git
-glew
-glfw
 glib-networking
 glib2
 glibc
@@ -163,6 +166,8 @@ glslang
 glu
 glycin
 gmp
+gnome-app-list
+gnome-software
 gnome-themes-extra
 gnulib-l10n
 gnupg
@@ -199,6 +204,7 @@ gtkmm-4.0
 gtkmm3
 gtksourceview4
 guile
+gumbo-parser
 gupnp
 gupnp-igd
 gvfs
@@ -456,7 +462,6 @@ iwd
 jansson
 jasper
 jbigkit
-jemalloc
 jq
 json-c
 json-glib
@@ -545,7 +550,6 @@ libcbor
 libcdio
 libcdio-paranoia
 libcdr
-libcgif
 libcloudproviders
 libcmis
 libcolord
@@ -602,7 +606,6 @@ libice
 libid3tag
 libidn2
 libiec61883
-libimagequant
 libime
 libimobiledevice
 libimobiledevice-glue
@@ -625,6 +628,7 @@ libluv
 liblzf
 libmad
 libmakepkg-dropins
+libmalcontent
 libmbim
 libmd
 libmikmod
@@ -739,7 +743,6 @@ libuv
 libva
 libvdpau
 libverto
-libvips
 libvirt
 libvirt-glib
 libvirt-python
@@ -808,6 +811,7 @@ linux-firmware-other
 linux-firmware-radeon
 linux-firmware-realtek
 linux-firmware-whence
+litehtml0.9
 lld
 llhttp
 llvm-libs
@@ -849,6 +853,7 @@ mpg123
 mpv
 msgpack-c
 mtdev
+mtools
 mujs
 mypaint-brushes
 mypaint-brushes1
@@ -894,6 +899,7 @@ opus
 orc
 os-prober
 osinfo-db
+ostree
 otf-crimson
 p11-kit
 pacman
@@ -930,6 +936,7 @@ perl-io-html
 perl-libwww
 perl-lwp-mediatypes
 perl-mailtools
+perl-mime-base32
 perl-net-http
 perl-timedate
 perl-try-tiny
@@ -1080,6 +1087,7 @@ suitesparse
 svt-av1
 sway
 swayidle
+swaylock
 swaync
 swtpm
 systemd
@@ -1144,7 +1152,6 @@ vulkan-radeon
 wavpack
 wayland
 wayland-protocols
-webp-pixbuf-loader
 webrtc-audio-processing-1
 wget
 which
@@ -1170,6 +1177,7 @@ xcb-util-keysyms
 xcb-util-renderutil
 xcb-util-wm
 xcur2png
+xdg-dbus-proxy
 xdg-desktop-portal
 xdg-desktop-portal-gtk
 xdg-desktop-portal-wlr
