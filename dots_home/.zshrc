@@ -83,4 +83,4 @@ fi
 
 #PROMPT
 
-PROMPT='%B%K{cyan}%F{#000000}%n@%m%k%f %K{red}%F{#000000}%~%k%b%f $ '
+PROMPT='%B%K{cyan}%F{#000000}%n@%m%k%f %K{magenta}%F{#000000}%~%k%b%f $ '
