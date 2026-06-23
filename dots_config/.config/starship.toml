@@ -1,0 +1,32 @@
+format = """
+$username\
+$hostname\
+$directory\
+$git_branch\
+$git_status\
+$package\
+$golang\
+$nodejs\
+$rust\
+$python\
+$fill\
+$cmd_duration
+$character"""
+
+[fill]
+symbol = " "
+
+[username]
+show_always = true
+format = "[$user]($style) "
+style_user = "bold cyan"
+
+[directory]
+truncation_length = 0
+fish_style_pwd_dir_length = 0
+format = "in [$path]($style)[$read_only]($read_only_style) "
+style = "bold yellow"
+
+[character]
+success_symbol = "[>](bold green) "
+error_symbol = "[>](bold red) "

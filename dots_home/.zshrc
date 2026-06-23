@@ -81,6 +81,4 @@ fi
 
 
 
-#PROMPT
-
-PROMPT='%B%K{cyan}%F{#000000}%n@%m%k%f %K{magenta}%F{#000000}%~%k%b%f $ '
+eval "$(starship init zsh)"

@@ -1,4 +1,4 @@
-output eDP-1 scale 1.25
+output eDP-1 scale 1
 set $mod Mod4
 set $term foot
 set $menu rofi -show run
@@ -10,6 +10,9 @@ for_window [class="^.*"] border pixel 2
 client.focused #ffffff #ffffff #ffffff #ffffff
 
 
+
+
+font pango:DejaVuSansM Nerd Font 11
 
 bar {
     status_command i3status-rs ~/.config/i3status-rust/config.toml
@@ -25,13 +28,13 @@ exec fcitx5 &
 exec nm-applet &
 exec blueman-applet &
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
-exec wl-paste --type text --watch cliphist store
-exec wl-paste --type image --watch cliphist store
+exec wl-paste --type text --watch cliphist store &
+exec wl-paste --type image --watch cliphist store &
 exec mako &
 exec awww-daemon &
-exec autotiling
-
-
+exec autotiling &
+exec udiskie &
+exec kbuildsycoca6 --noincremental &
 
 floating_modifier $mod
 
@@ -53,7 +56,7 @@ bindsym $mod+Shift+up move up
 bindsym $mod+Shift+right move right
 bindsym $mod+f fullscreen toggle
 bindsym $mod+h layout toggle split
-bindsym $mod+e exec nemo
+bindsym $mod+e exec dolphin
 bindsym $mod+space floating toggle
 bindsym $mod+a focus parent
 
@@ -75,7 +78,9 @@ bindsym XF86AudioPrev exec playerctl previous
 
 
 #gamma
+bindsym $mod+Mod1+up exec ~/script/gamma.sh up
 
+bindsym $mod+Mod1+down exec ~/script/gamma.sh down
 
 
 
