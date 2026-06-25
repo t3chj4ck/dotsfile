@@ -6,26 +6,13 @@ export XDG_DATA_DIRS="$XDG_DATA_DIRS:$HOME/.local/share/flatpak/exports/share:/v
 export EDITOR=nvim
 export DISPLAY=:0
 export XDG_SESSION_TYPE=wayland
-
+export ZELLIJ_AUTO_ATTACH=true
 
 
 
 source $ZSH/oh-my-zsh.sh
 
 
-
-function yazi_cd() {
-  local tmpfile="$(mktemp)"
-  yazi --chooser-file="$tmpfile" "$@"
-  if [[ -f "$tmpfile" ]]; then
-    local dir="$(<"$tmpfile")"
-    rm -f "$tmpfile"
-    if [[ -d "$dir" ]]; then
-      cd "$dir"
-    fi
-  fi
-}
-alias y=yazi_cd
 
 # eval "$(starship init zsh)"
 
@@ -61,24 +48,15 @@ zinit light-mode for \
 zinit load zsh-users/zsh-autosuggestions
 zinit load zsh-users/zsh-syntax-highlighting
 
-#zellij
-# if [[ -z "$ZELLIJ" && $- == *i* ]]; then
-#     if zellij list-sessions 2>/dev/null | grep -q -v "EXITED"; then
-#         zellij attach
-#     else
-#         zellij
-#     fi
-# fi
-#
-# eval "$(starship init zsh)"
-
-#tmux
 # Auto-start tmux if not already inside a tmux session
-if [ -z "$TMUX" ] && [ -n "$PS1" ] && command -v tmux &> /dev/null; then
-    tmux attach-session -t default 2>/dev/null || tmux new-session -s default
-fi
+
+# if [ -z "$TMUX" ] && [ -n "$PS1" ] && command -v tmux &> /dev/null; then
+#     tmux attach-session -t default 2>/dev/null || tmux new-session -s default
+# fi
+
 
 
 
 
 eval "$(starship init zsh)"
+eval "$(zellij setup --generate-auto-start zsh)"

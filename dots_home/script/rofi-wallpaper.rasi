@@ -1,0 +1,82 @@
+/**
+ * ROFI Color theme
+ */
+* {
+    bg-window:   #00000099; 
+    bg-search:   #313244; 
+    bg-card:     #000000; 
+    accent-col:  #ffffff;  
+    fg-text:     #ffffff;  
+    fg-dark:     #000000;   
+    
+    background-color: transparent;
+    text-color:       @fg-text;
+}
+
+window {
+    transparency:     "real";
+    background-color: @bg-window;
+    border:           2px;
+    border-color:     @accent-col;
+    width:            960px;   
+    height:           680px;
+    location:         center;
+    anchor:           center;
+}
+
+mainbox {
+    padding:          25px;
+    children:         [ inputbar, listview ];
+}
+
+inputbar {
+    background-color: @bg-search;
+    padding:          12px 18px;
+    margin:           0px 0px 20px 0px;
+    children:         [ prompt, entry ];
+}
+
+prompt {
+    text-color:       @accent-col;
+}
+
+entry {
+    placeholder-color: #6c7086;
+    margin:            0px 0px 0px 10px;
+}
+
+listview {
+    columns:          3;
+    lines:            2;       
+    spacing:          20px;    
+    cycle:            true;
+    dynamic:          true;
+    layout:           vertical;
+}
+
+element {
+    orientation:      vertical;
+    background-color: @bg-card;
+    padding:          12px;
+    border:           2px;
+    border-color:     transparent;
+}
+
+element selected {
+    background-color: @accent-col;
+    border-color:     @accent-col;
+    text-color:       @fg-dark; 
+}
+
+element-icon {
+    size:             160px;  
+    horizontal-align: 0.5;
+    vertical-align:   0.5;
+    expand:           true;
+}
+
+element-text {
+    text-color:       inherit; 
+    horizontal-align: 0.5;     
+    margin:           10px 0px 0px 0px;
+}

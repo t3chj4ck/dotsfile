@@ -121,13 +121,14 @@ require("lazy").setup({
 
 
 
-
+	--color theme
 	{
-		"ellisonleao/gruvbox.nvim",
-		config = function()
-			vim.cmd.colorscheme("gruvbox")
-		end
-	}, --color theme
+		"folke/tokyonight.nvim",
+		lazy = false,
+		priority = 1000,
+		opts = {},
+	},
+
 
 	{
 		"nvim-telescope/telescope.nvim",

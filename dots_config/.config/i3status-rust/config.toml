@@ -6,7 +6,7 @@ info_fg = "#FFFFFF"
 
 
 [icons]
-icons = "material-nf"
+# icons = "material-nf"
 
 
 
@@ -87,17 +87,5 @@ block = "net"
 device = "^(enp|ens|enx|eth|wlp|wlan)"
 format = " $icon {$signal_strength $ssid} "
 interval = 10
-
-[[block]]
-block = "custom"
-command = "echo 󰸉"
-interval = "once"
-[[block.click]]
-button = "left"
-cmd = "bash ~/script/change_wallpaper.sh"
-[[block.click]]
-button = "right"
-cmd = "bash ~/script/change_wallpaper_rightclick.sh"
-
 
 
