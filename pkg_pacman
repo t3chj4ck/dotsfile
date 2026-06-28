@@ -83,6 +83,7 @@ desktop-file-utils
 device-mapper
 dhcpcd
 diffutils
+djvulibre
 dmidecode
 dnsmasq
 docker
@@ -100,9 +101,12 @@ dtc
 duktape
 e2fsprogs
 edk2-ovmf
+efibootmgr
+efivar
 elfutils
 ell
 enchant
+evince
 ex-vi-compat
 exempi
 exiv2
@@ -152,6 +156,7 @@ gegl
 gettext
 gexiv2
 gfxstream
+ghostscript
 giflib
 gimp
 git
@@ -168,6 +173,7 @@ glycin-gtk4
 gmp
 gnome-app-list
 gnome-autoar
+gnome-desktop
 gnome-desktop-4
 gnome-desktop-common
 gnome-software
@@ -175,6 +181,7 @@ gnome-themes-extra
 gnulib-l10n
 gnupg
 gnutls
+go
 gobject-introspection-runtime
 gparted
 gperftools
@@ -191,7 +198,9 @@ grsync
 grub
 gsettings-desktop-schemas
 gsettings-system-schemas
+gsfonts
 gsm
+gspell
 gssdp
 gst-plugins-bad-libs
 gst-plugins-base
@@ -227,6 +236,7 @@ hyphen
 i3status-rust
 iana-etc
 icu
+ijs
 imagemagick
 imath
 imlib2
@@ -238,12 +248,14 @@ iso-codes
 iwd
 jansson
 jasper
+jbig2dec
 jbigkit
 jq
 json-c
 json-glib
 jsoncpp
 kbd
+kcoreaddons
 kdbusaddons
 keyutils
 kitemviews
@@ -391,6 +403,7 @@ libdbusmenu-gtk3
 libde265
 libdecor
 libdeflate
+libdispatch
 libdisplay-info
 libdovi
 libdrm
@@ -432,9 +445,11 @@ libgsf
 libgudev
 libgusb
 libgxps
+libhandy
 libheif
 libice
 libid3tag
+libidn
 libidn2
 libiec61883
 libime
@@ -462,6 +477,7 @@ liblzf
 libmad
 libmakepkg-dropins
 libmalcontent
+libmanette
 libmbim
 libmd
 libmikmod
@@ -506,6 +522,7 @@ liborcus
 libosinfo
 libp11-kit
 libpagemaker
+libpaper
 libpathrs
 libpcap
 libpciaccess
@@ -545,12 +562,14 @@ libsndfile
 libsodium
 libsoup3
 libsoxr
+libspectre
 libspiro
 libssh
 libssh2
 libstaroffice
 libstdc++
 libstemmer
+libsynctex
 libsysprof-capture
 libtasn1
 libtatsu
@@ -683,6 +702,7 @@ mkinitcpio
 mkinitcpio-busybox
 mobile-broadband-provider-info
 modemmanager
+moreutils
 mpc
 mpd
 mpd-mpris
@@ -770,11 +790,14 @@ perl-http-date
 perl-http-message
 perl-http-negotiate
 perl-io-html
+perl-io-tty
+perl-ipc-run
 perl-libwww
 perl-lwp-mediatypes
 perl-mailtools
 perl-mime-base32
 perl-net-http
+perl-time-duration
 perl-timedate
 perl-try-tiny
 perl-uri
@@ -790,6 +813,7 @@ pipewire-pulse
 pipewire-session-manager
 pixman
 pkgconf
+pnpm
 polkit
 polkit-gnome
 poppler
@@ -860,11 +884,13 @@ qemu-ui-spice-core
 qemu-vhost-user-gpu
 qt6-base
 qt6-declarative
+qt6-imageformats
 qt6-positioning
 qt6-scxml
 qt6-svg
 qt6-tools
 qt6-translations
+qt6-wayland
 qt6-webchannel
 qt6-webengine
 qt6ct
@@ -879,6 +905,7 @@ remmina
 rhash
 ripgrep
 rmpc
+rnnoise
 rofi
 rsync
 rubberband
@@ -940,6 +967,7 @@ talloc
 tar
 tcpdump
 tdb
+telegram-desktop
 terminus-font
 texinfo
 tig
@@ -996,6 +1024,7 @@ vulkan-radeon
 wavpack
 wayland
 wayland-protocols
+webkit2gtk-4.1
 webrtc-audio-processing-1
 wget
 which
@@ -1003,6 +1032,7 @@ wildmidi
 wireplumber
 wl-clipboard
 wlroots0.20
+woff2
 woff2-font-awesome
 wolfssl
 wpa_supplicant

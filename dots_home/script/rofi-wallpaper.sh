@@ -15,7 +15,7 @@ selected=$(
 		fi
 
 		printf "%s\0icon\x1f%s\n" "$basename" "$thumb"
-	done | rofi -dmenu -show-icons -p -theme ~/script/rofi-wallpaper.rasi "wallpaper"
+	done | rofi -dmenu -show-icons -p -theme ~/.config/rofi/rofi-wallpaper.rasi "wallpaper"
 )
 
 #awww

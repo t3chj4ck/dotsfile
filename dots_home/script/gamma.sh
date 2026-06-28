@@ -27,3 +27,4 @@ echo "$NEW_TEMP" >"$TEMP_FILE"
 pkill gammastep
 
 gammastep -O "$NEW_TEMP" &
+notify-send "gamma ${NEW_TEMP}K"
