@@ -69,7 +69,6 @@ duktape
 e2fsprogs
 efibootmgr
 efivar
-electron42
 elfutils
 enchant
 exempi
@@ -522,6 +521,7 @@ pkgconf
 playerctl
 pnpm
 polkit
+polkit-gnome
 poppler
 poppler-glib
 popt
@@ -580,6 +580,8 @@ stow
 sudo
 svt-av1
 sway
+swayidle
+swaylock
 systemd
 systemd-libs
 systemd-sysvcompat
