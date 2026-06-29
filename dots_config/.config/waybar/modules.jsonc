@@ -1,0 +1,116 @@
+{
+	"custom/power": {
+		"exec": "~/script/power_status.sh",
+		"interval": 10,
+		"format": "{}"
+	},
+	"custom/weather": {
+		"exec": "~/script/weather.sh",
+		"interval": 3000,
+		"format": "{}"
+	},
+	// ==========================================
+	//	Clock
+	// ==========================================
+	"clock": {
+		"interval": 60,
+		"format": " {:%H:%M}",
+		"format-alt": "📅 {:%Y-%m-%d}",
+		"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+		"calendar": {
+			"mode": "month",
+			"weeks-pos": "right",
+			"on-scroll": 1,
+			"format": {
+				"months": "<span color='#ffead3'><b>{}</b></span>",
+				"days": "<span color='#ecc6d9'><b>{}</b></span>",
+				"weeks": "<span color='#99ff99'><b>W{}</b></span>",
+				"weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+				"today": "<span color='#ff6666'><b><u>{}</u></b></span>"
+			}
+		}
+	},
+	// ==========================================
+	// CPU
+	// ==========================================
+	"cpu": {
+		"interval": 2,
+		"format": " {usage}%",
+		"tooltip": true,
+		"tooltip-format": "CPU core:\n{usage_per_core}"
+	},
+	// ==========================================
+	// Memory
+	// ==========================================
+	"memory": {
+		"interval": 5,
+		"format": " {percentage}%",
+		"tooltip": true,
+		"tooltip-format": "🧠 memory: {used:0.1f}GiB / {total:0.1f}GiB\n🔄 swap: {swapUsed:0.1f}GiB"
+	},
+	// ==========================================
+	// Battery
+	// ==========================================
+	"battery": {
+		"states": {
+			"good": 95,
+			"warning": 30,
+			"critical": 15
+		},
+		"format": "{icon} {capacity}%",
+		"format-charging": "󱐋 {capacity}%",
+		"format-plugged": " {capacity}%",
+		"format-alt": "{icon} {time}",
+		"format-icons": [
+			"",
+			"",
+			"",
+			"",
+			""
+		]
+	},
+	// ==========================================
+	// Network
+	// ==========================================
+	"network": {
+		"interval": 5,
+		"format-wifi": " {essid}",
+		"format-ethernet": "󰈀 Wired",
+		"format-disconnected": "⚠ Disconnected",
+		"tooltip-format": "interface: {ifname} via {gwaddr}",
+		"tooltip-format-wifi": "📶 strenth: {signalStrength}%\n📥 {bandwidthDownBits}  📤 {bandwidthUpBits}",
+		"tooltip-format-ethernet": "󰈀 wired\n📥 {bandwidthDownBits}  📤 {bandwidthUpBits}",
+		"on-click": "foot -e nmtui"
+	},
+	// === Power Profiles Daemon ===
+	"power-profiles-daemon": {
+		"format": "{icon} {profile}",
+		"tooltip-format": "power-mode: {profile}\ndriver: {driver}",
+		"tooltip": true,
+		"format-icons": {
+			"default": "󰾅",
+			"performance": "󰓅",
+			"balanced": "󰾅",
+			"power-saver": "󰌪"
+		}
+	},
+	// === MPRIS (Media Player) ===
+	"mpris": {
+		"format": "{player_icon} {status_icon} {dynamic}",
+		"format-paused": "{player_icon} {status_icon} <i>{dynamic}</i>",
+		"format-stopped": "{player_icon} ⏹ Stopped",
+		"max-length": 45,
+		"dynamic-order": [
+			"title",
+			"artist"
+		],
+		"player-icons": {
+			"default": "🎵",
+			"mpv": "🎬"
+		},
+		"status-icons": {
+			"playing": "▶",
+			"paused": "⏸"
+		}
+	}
+}

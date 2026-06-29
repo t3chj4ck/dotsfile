@@ -1,0 +1,36 @@
+proxies:
+- name: "apple-sni-443"
+  type: vless
+  server: '173.254.234.31'
+  port: 443
+  uuid: '62d6e1aa-47e0-46da-8d6c-acc9089172b6'
+  udp: true
+  tls: true
+  servername: 'www.apple.com'
+  flow: 'xtls-rprx-vision'
+  skip-cert-verify: false
+  client-fingerprint: 'chrome'
+  network: 'tcp'
+  reality-opts:
+    public-key: 'RK2BfBvdwBBNnyzMqzr9LYh-gCly4fyL-n_oiF0to3M'
+
+proxy-groups:
+- name: PROXY
+  type: select
+  url: http://cp.cloudflare.com/generate_204
+  expected-status: 204
+  interval: 300
+  icon: https://i.imgur.com/B3HrpPC.png
+  proxies:
+    - auto
+    - "apple-sni-443"
+
+- name: auto
+  proxies:
+    - "apple-sni-443"
+  type: url-test
+  url: http://cp.cloudflare.com/generate_204
+  expected-status: 204
+  interval: 300
+  tolerance: 150
+  lazy: true

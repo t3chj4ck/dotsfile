@@ -1,0 +1,23 @@
+{
+	"include": [
+		"~/.config/waybar/modules.jsonc"
+	],
+	"layer": "top",
+	"position": "top",
+	"modules-left": [
+		"sway/workspaces",
+		"sway/window"
+	],
+	"modules-right": [
+		"mpris",
+		"custom/weather",
+		"memory",
+		"cpu",
+		"power-profiles-daemon",
+		"custom/power",
+		"battery",
+		"network",
+		"clock",
+		"tray"
+	]
+}

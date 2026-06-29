@@ -12,16 +12,14 @@ client.focused #ffffff #ffffff #ffffff #ffffff
 
 
 
-font pango:Terminus 11
-
-bar {
-    status_command i3status-rs ~/.config/i3status-rust/config.toml
-    position top
-	tray_output none
-    colors {
-        background #000000
-    }	
-}
+# bar {
+#     status_command i3status-rs ~/.config/i3status-rust/config.toml
+#     position top
+# 	tray_output none
+#     colors {
+#         background #000000
+#     }	
+# }
 
 
 exec fcitx5 &
@@ -35,6 +33,8 @@ exec awww-daemon &
 exec autotiling &
 exec udiskie &
 exec kbuildsycoca6 --noincremental &
+exec waybar &
+
 
 floating_modifier $mod
 
