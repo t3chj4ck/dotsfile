@@ -1,6 +1,0 @@
-adwaita-fonts
-fontconfig
-noto-fonts-cjk
-noto-fonts-emoji
-ttf-dejavu
-ttf-dejavu-nerd

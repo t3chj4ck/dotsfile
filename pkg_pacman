@@ -97,6 +97,7 @@ freetype2
 fribidi
 fuse3
 fuse-common
+gammastep
 gawk
 gc
 gcc
@@ -106,6 +107,7 @@ gdb
 gdb-common
 gdbm
 gdk-pixbuf2
+geocode-glib
 gettext
 gexiv2
 giflib
@@ -142,6 +144,7 @@ greetd-tuigreet
 grep
 grim
 groff
+grub
 gsettings-desktop-schemas
 gsettings-system-schemas
 gsm
@@ -161,6 +164,7 @@ gupnp
 gupnp-dlna
 gupnp-igd
 gvfs
+gweather-locations
 gzip
 harfbuzz
 harfbuzz-icu
@@ -237,6 +241,7 @@ libdaemon
 libdatrie
 libdbusmenu-glib
 libdbusmenu-gtk3
+libdecor
 libdeflate
 libdisplay-info
 libdovi
@@ -245,6 +250,7 @@ libdvdnav
 libdvdread
 libebur128
 libedit
+libei
 libelf
 libepoxy
 libevdev
@@ -252,6 +258,7 @@ libevent
 libexif
 libfdk-aac
 libffi
+libfontenc
 libfreeaptx
 libfyaml
 libgcc
@@ -264,6 +271,7 @@ libgomp
 libgpg-error
 libgsf
 libgudev
+libgweather-4
 libgxps
 libhwasan
 libice
@@ -312,6 +320,7 @@ libnma
 libnma-common
 libnotify
 libnsl
+libntfs-3g
 libnvme
 libobjc
 libogg
@@ -384,10 +393,12 @@ libxcb
 libxcomposite
 libxcrypt
 libxcursor
+libxcvt
 libxdamage
 libxdmcp
 libxext
 libxfixes
+libxfont2
 libxft
 libxi
 libxinerama
@@ -405,6 +416,7 @@ libxt
 libxtst
 libxv
 libxxf86vm
+libyaml
 libyuv
 libzip
 licenses
@@ -429,6 +441,7 @@ llvm-libs
 lmdb
 lm_sensors
 localsearch
+loupe
 l-smash
 lua
 lua51-lpeg
@@ -467,12 +480,14 @@ nm-connection-editor
 node-gyp
 nodejs
 nodejs-nopt
+noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji
 npm
 npth
 nspr
 nss
+ntfsprogs
 nvm
 nwg-look
 ocl-icd
@@ -487,7 +502,9 @@ openssl
 opus
 orc
 osinfo-db
+os-prober
 ostree
+otf-font-awesome
 p11-kit
 pacman
 pacman-mirrorlist
@@ -532,10 +549,13 @@ procps-ng
 psmisc
 python
 python-cairo
+python-docopt
 python-gobject
 python-i3ipc
+python-keyutils
 python-six
 python-xlib
+python-yaml
 qt6-base
 qt6-declarative
 qt6-positioning
@@ -601,8 +621,11 @@ tree-sitter-vimdoc
 tslib
 ttf-dejavu
 ttf-dejavu-nerd
+ttf-nerd-fonts-symbols
+ttf-nerd-fonts-symbols-common
 tzdata
 uchardet
+udiskie
 udisks2
 unibilium
 upower
@@ -616,6 +639,9 @@ vim-runtime
 vmaf
 volume_key
 vulkan-icd-loader
+vulkan-mesa-implicit-layers
+vulkan-radeon
+vulkan-tools
 waybar
 wayland
 wayland-protocols
@@ -626,6 +652,7 @@ wireplumber
 wl-clipboard
 wlroots0.20
 woff2
+woff2-font-awesome
 wpa_supplicant
 x264
 x265
@@ -646,8 +673,13 @@ xdg-user-dirs
 xdg-user-dirs-gtk
 xdg-utils
 xkeyboard-config
+xorg-fonts-encodings
 xorgproto
+xorg-server-common
+xorg-setxkbmap
+xorg-xkbcomp
 xorg-xprop
+xorg-xwayland
 xvidcore
 xxhash
 xz

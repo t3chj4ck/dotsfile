@@ -10,8 +10,10 @@
 	],
 	"modules-right": [
 		"mpris",
+		"pulseaudio",
 		"custom/weather",
 		"memory",
+		"temperature",
 		"cpu",
 		"power-profiles-daemon",
 		"custom/power",

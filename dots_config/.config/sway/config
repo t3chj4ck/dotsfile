@@ -34,7 +34,7 @@ exec autotiling &
 exec udiskie &
 exec kbuildsycoca6 --noincremental &
 exec waybar &
-
+exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway SWAYSOCK
 
 floating_modifier $mod
 
