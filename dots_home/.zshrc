@@ -59,4 +59,3 @@ zinit load zsh-users/zsh-syntax-highlighting
 
 
 eval "$(starship init zsh)"
-eval "$(zellij setup --generate-auto-start zsh)"
