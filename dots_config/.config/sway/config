@@ -1,11 +1,9 @@
-output eDP-1 scale 1
 set $mod Mod4
 set $term foot
 set $menu rofi -show run
 
-
 gaps outer 8
-gaps inner 4 
+gaps inner 4
 for_window [class="^.*"] border pixel 2
 client.focused #ffffff #ffffff #ffffff #ffffff
 
@@ -29,13 +27,15 @@ exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 exec wl-paste --type text --watch cliphist store &
 exec wl-paste --type image --watch cliphist store &
 exec mako &
-exec awww-daemon &
+exec ~/script/swaybg_startup.sh &
 exec autotiling &
 exec udiskie &
-exec kbuildsycoca6 --noincremental &
+# exec kbuildsycoca6 --noincremental &
 exec waybar &
 exec clash-verge &
 exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway SWAYSOCK
+
+
 
 floating_modifier $mod
 
@@ -85,7 +85,7 @@ bindsym $mod+Mod1+down exec ~/script/gamma.sh down
 
 
 #wallpaper
-bindsym $mod+Shift+w exec ~/script/rofi-wallpaper.sh
+bindsym $mod+Shift+w exec ~/script/swaybg.sh
 
 
 

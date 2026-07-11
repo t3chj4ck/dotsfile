@@ -14,7 +14,7 @@
 	// ==========================================
 	"clock": {
 		"interval": 60,
-		"format": " {:%H:%M}",
+		"format": "  {:%H:%M}",
 		"format-alt": "📅 {:%Y-%m-%d}",
 		"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
 		"calendar": {
@@ -57,7 +57,7 @@
 			"warning": 30,
 			"critical": 15
 		},
-		"format": "{icon} {capacity}%",
+		"format": "{icon}  {capacity}%",
 		"format-charging": "󱐋 {capacity}%",
 		"format-plugged": " {capacity}%",
 		"format-alt": "{icon} {time}",
@@ -74,7 +74,7 @@
 	// ==========================================
 	"network": {
 		"interval": 5,
-		"format-wifi": " {essid}",
+		"format-wifi": "  {essid}",
 		"format-ethernet": "󰈀 Wired",
 		"format-disconnected": "⚠ Disconnected",
 		"tooltip-format": "interface: {ifname} via {gwaddr}",
