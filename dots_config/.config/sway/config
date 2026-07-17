@@ -32,9 +32,7 @@ exec autotiling &
 exec udiskie &
 # exec kbuildsycoca6 --noincremental &
 exec waybar &
-exec clash-verge &
-exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway SWAYSOCK
-
+exec v2rayN
 
 
 floating_modifier $mod
@@ -152,7 +150,7 @@ exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DE
 
 exec swayidle -w \
     timeout 600 '~/script/blur_lock.sh' \
-    before-sleep 'swaylock -f -c 000000'
+    before-sleep '~/script/blur_lock.sh'
 
 
 

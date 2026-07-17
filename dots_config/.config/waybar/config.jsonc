@@ -6,7 +6,9 @@
 	"position": "top",
 	"modules-left": [
 		"sway/workspaces",
-		"sway/window"
+		"sway/window",
+		"hyprland/workspaces",
+		"hyprland/window"
 	],
 	"modules-right": [
 		"mpris",
