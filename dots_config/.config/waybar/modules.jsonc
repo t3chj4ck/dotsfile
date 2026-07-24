@@ -80,19 +80,12 @@
 		"tooltip-format": "interface: {ifname} via {gwaddr}",
 		"tooltip-format-wifi": "📶 strenth: {signalStrength}%\n📥 {bandwidthDownBits}  📤 {bandwidthUpBits}",
 		"tooltip-format-ethernet": "󰈀 wired\n📥 {bandwidthDownBits}  📤 {bandwidthUpBits}",
-		"on-click": "foot -e nmtui"
+		"on-click": "foot -e nmtui-connect"
 	},
 	// === Power Profiles Daemon ===
 	"power-profiles-daemon": {
-		"format": "{icon} {profile}",
-		"tooltip-format": "power-mode: {profile}\ndriver: {driver}",
-		"tooltip": true,
-		"format-icons": {
-			"default": "󰾅",
-			"performance": "󰓅",
-			"balanced": "󰾅",
-			"power-saver": "󰌪"
-		}
+		"format": "{profile}",
+		"interval": 20
 	},
 	// === MPRIS (Media Player) ===
 	"mpris": {

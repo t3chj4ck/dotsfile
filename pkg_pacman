@@ -137,6 +137,7 @@ geocode-glib
 gettext
 gexiv2
 gfxstream
+ghidra
 giflib
 git
 glfw
@@ -202,6 +203,8 @@ gvfs
 gweather-locations
 gzip
 harfbuzz
+harfbuzz-icu
+hdparm
 hicolor-icon-theme
 hidapi
 highway
@@ -209,11 +212,14 @@ hivex
 htop
 hwdata
 hwloc
+hyphen
 hyprcursor
 hyprgraphics
+hypridle
 hyprland
 hyprland-guiutils
 hyprlang
+hyprlock
 hyprtoolkit
 hyprutils
 hyprwayland-scanner
@@ -227,8 +233,12 @@ iproute2
 iptables
 iputils
 iso-codes
+iw
 jansson
+java-environment-common
+java-runtime-common
 jbigkit
+jdk-openjdk
 jfsutils
 jq
 json-c
@@ -383,6 +393,7 @@ liblsan
 libluv
 libmakepkg-dropins
 libmalcontent
+libmanette
 libmd
 libmm-glib
 libmnl
@@ -393,6 +404,7 @@ libmysofa
 libnautilus-extension
 libnbd
 libndp
+libnet
 libnetfilter_conntrack
 libnewt
 libnfnetlink
@@ -666,7 +678,6 @@ poppler
 poppler-glib
 popt
 portaudio
-power-profiles-daemon
 pps-tools
 procps-ng
 protobuf
@@ -701,6 +712,7 @@ python-platformdirs
 python-pyparsing
 python-requests
 python-setuptools
+python-shtab
 python-six
 python-typing_extensions
 python-urllib3
@@ -775,6 +787,7 @@ rust
 rutabaga-ffi
 sbc
 sbctl
+sdbus-cpp
 sdl2-compat
 sdl2_image
 sdl3
@@ -829,6 +842,10 @@ tdb
 texinfo
 thin-provisioning-tools
 tinysparql
+tlp
+tlp-pd
+tlp-rdw
+tlpui
 tomlplusplus
 totem-pl-parser
 tpm2-tss
@@ -853,6 +870,7 @@ unibilium
 unzip
 upower
 usbredir
+usbutils
 util-linux
 util-linux-libs
 v4l-utils
@@ -875,12 +893,14 @@ wavpack
 waybar
 wayland
 wayland-protocols
+webkit2gtk-4.1
 webrtc-audio-processing-1
 wget
 which
 wireplumber
 wl-clipboard
 wlroots0.20
+woff2
 woff2-font-awesome
 wolfssl
 wpa_supplicant

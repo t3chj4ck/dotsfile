@@ -17,7 +17,6 @@
 		"memory",
 		"temperature",
 		"cpu",
-		"power-profiles-daemon",
 		"custom/power",
 		"battery",
 		"network",
