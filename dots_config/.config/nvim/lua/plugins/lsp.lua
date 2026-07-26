@@ -57,8 +57,10 @@ local servers = {
 	},
 
 	bashls = {},
-
-
+	rust_analyzer = {},
+	jsonls = {},
+	pyright = {},
+	cssls = {},
 }
 
 mason_lspconfig.setup({

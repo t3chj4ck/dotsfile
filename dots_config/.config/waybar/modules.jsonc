@@ -80,7 +80,7 @@
 		"tooltip-format": "interface: {ifname} via {gwaddr}",
 		"tooltip-format-wifi": "📶 strenth: {signalStrength}%\n📥 {bandwidthDownBits}  📤 {bandwidthUpBits}",
 		"tooltip-format-ethernet": "󰈀 wired\n📥 {bandwidthDownBits}  📤 {bandwidthUpBits}",
-		"on-click": "foot -e nmtui-connect"
+		"on-click": "kitty -e nmtui-connect"
 	},
 	// === Power Profiles Daemon ===
 	"power-profiles-daemon": {

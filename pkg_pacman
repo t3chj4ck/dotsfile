@@ -2,7 +2,6 @@ aalib
 abseil-cpp
 accountsservice
 acl
-acpica
 ada
 adwaita-cursors
 adwaita-fonts
@@ -22,7 +21,6 @@ atkmm
 at-spi2-core
 attr
 audit
-augeas
 autoconf
 automake
 autotiling
@@ -41,7 +39,6 @@ bluez-libs
 boost-libs
 brightnessctl
 brotli
-btrfs-progs
 bubblewrap
 bzip2
 ca-certificates
@@ -54,8 +51,6 @@ capstone
 c-ares
 cblas
 cdparanoia
-cdrtools
-clang
 cliphist
 cmake
 compiler-rt
@@ -84,6 +79,8 @@ dnsmasq
 docker
 docker-compose
 dosfstools
+dotnet-host
+dotnet-runtime-8.0
 double-conversion
 dtc
 duktape
@@ -160,7 +157,6 @@ gnome-software
 gnulib-l10n
 gnupg
 gnutls
-go
 gobject-introspection-runtime
 gparted
 gperftools
@@ -205,10 +201,10 @@ gzip
 harfbuzz
 harfbuzz-icu
 hdparm
+helix
 hicolor-icon-theme
 hidapi
 highway
-hivex
 htop
 hwdata
 hwloc
@@ -246,9 +242,11 @@ jsoncpp
 json-glib
 kbd
 kdbusaddons
-kernel-headers-musl
 keyutils
 kitemviews
+kitty
+kitty-shell-integration
+kitty-terminfo
 kmod
 krb5
 kwidgetsaddons
@@ -324,7 +322,6 @@ libcdio
 libcdio-paranoia
 libcloudproviders
 libcolord
-libconfig
 libcue
 libcups
 libdaemon
@@ -346,7 +343,6 @@ libelf
 libepoxy
 libevdev
 libevent
-libewf
 libexif
 libfdk-aac
 libffi
@@ -363,7 +359,6 @@ libgomp
 libgpg-error
 libgsf
 libgudev
-libguestfs
 libgweather-4
 libgxps
 libhwasan
@@ -444,6 +439,7 @@ libquadmath
 libraqm
 libraw1394
 librsvg
+librsync
 libsamplerate
 libsasl
 libseccomp
@@ -518,6 +514,7 @@ libxkbcommon-x11
 libxkbfile
 libxml2
 libxmlb
+libxmu
 libxpresent
 libxrandr
 libxrender
@@ -581,7 +578,6 @@ minizip
 mkinitcpio
 mkinitcpio-busybox
 mobile-broadband-provider-info
-moreutils
 mpdecimal
 mpfr
 mpg123
@@ -591,16 +587,13 @@ mtdev
 mtools
 mujs
 muparser
-musl
 nano
-nasm
 nautilus
 ncdu
 ncurses
 ndctl
 neovim
 nettle
-nettle3
 networkmanager
 network-manager-applet
 nftables
@@ -620,7 +613,6 @@ nss
 ntfs-3g
 ntfsprogs
 numactl
-nvm
 nwg-look
 ocl-icd
 onetbb
@@ -640,7 +632,6 @@ ostree
 otf-font-awesome
 p11-kit
 pacman
-pacman-contrib
 pacman-mirrorlist
 pam
 pambase
@@ -656,11 +647,8 @@ pcre2
 pcsclite
 perl
 perl-error
-perl-io-tty
-perl-ipc-run
 perl-mailtools
 perl-timedate
-perl-time-duration
 phodav
 pinentry
 pipewire
@@ -671,7 +659,6 @@ pipewire-session-manager
 pixman
 pkgconf
 playerctl
-pnpm
 polkit
 polkit-gnome
 poppler
@@ -707,14 +694,12 @@ python-more-itertools
 python-numpy
 python-packaging
 python-pillow
-python-pkg_resources
 python-platformdirs
 python-pyparsing
 python-requests
 python-setuptools
 python-shtab
 python-six
-python-typing_extensions
 python-urllib3
 python-wheel
 python-xlib
@@ -778,8 +763,6 @@ remmina
 rhash
 ripgrep
 rofi
-rpm-sequoia
-rpm-tools
 rsync
 rubberband
 runc
@@ -801,7 +784,6 @@ shadow
 shared-mime-info
 simdjson
 slang
-sleuthkit
 slurp
 snappy
 sndio
@@ -825,7 +807,6 @@ startup-notification
 stow
 strace
 sudo
-supermin
 svt-av1
 sway
 swaybg
@@ -859,6 +840,7 @@ tree-sitter-vimdoc
 tslib
 ttf-dejavu
 ttf-dejavu-nerd
+ttf-jetbrains-mono-nerd
 ttf-nerd-fonts-symbols
 ttf-nerd-fonts-symbols-common
 twolame
@@ -887,7 +869,6 @@ vmaf
 volume_key
 vte3
 vte-common
-vulkan-headers
 vulkan-icd-loader
 wavpack
 waybar
@@ -928,13 +909,13 @@ xorg-fonts-encodings
 xorgproto
 xorg-server-common
 xorg-setxkbmap
+xorg-xhost
 xorg-xkbcomp
 xorg-xprop
 xorg-xwayland
 xvidcore
 xxhash
 xz
-yara
 yazi
 yoga
 yt-dlp

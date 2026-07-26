@@ -18,10 +18,10 @@ hl.monitor({
 ---------------------
 
 -- set $mod Mod4
--- set $term foot
+-- set $term kitty
 -- set $menu rofi -show run
 local mainMod  = "SUPER"
-local terminal = "foot"
+local terminal = "kitty"
 local menu     = "rofi -show run"
 
 
@@ -68,10 +68,10 @@ hl.config({
 
 
 		blur = {
-			enabled  = true,
-			size     = 3,
-			passes   = 1,
-			vibrancy = 0.1696,
+			enabled           = true,
+			size              = 5,
+			passes            = 3,
+			new_optimizations = true,
 		},
 	},
 
@@ -139,7 +139,7 @@ hl.config({
 		kb_options    = "grp:alt_space_toggle",
 		kb_rules      = "",
 
-		sensitivity   = 0, -- pointer_accel 0
+		sensitivity   = 0.5, -- pointer_accel 0
 		accel_profile = "flat",
 		touchpad      = {
 			natural_scroll = true,

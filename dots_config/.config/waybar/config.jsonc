@@ -10,8 +10,10 @@
 		"hyprland/workspaces",
 		"hyprland/window"
 	],
+	"modules-center": [
+		"mpris"
+	],
 	"modules-right": [
-		"mpris",
 		"pulseaudio",
 		"custom/weather",
 		"memory",

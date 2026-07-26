@@ -6,7 +6,6 @@ export XDG_DATA_DIRS="$XDG_DATA_DIRS:$HOME/.local/share/flatpak/exports/share:/v
 export EDITOR=nvim
 export DISPLAY=:0
 export XDG_SESSION_TYPE=wayland
-export ZELLIJ_AUTO_ATTACH=true
 
 
 
@@ -54,7 +53,7 @@ zinit load zsh-users/zsh-syntax-highlighting
 #     tmux attach-session -t default 2>/dev/null || tmux new-session -s default
 # fi
 
-
+alias hx=helix
 
 
 
