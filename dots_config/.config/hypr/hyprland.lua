@@ -82,21 +82,18 @@ hl.config({
 
 
 
--- 1. 定义贝塞尔曲线 (使用 hl.curve)
 hl.curve("myBezier", {
 	type = "bezier",
-	points = { { 0.05, 0.9 }, { 0.1, 1.05 } }
+	points = { { 0, 1 }, { 0, 1 } }
 })
 
--- 2. 开启动画全局开关 (关键修正：目标节点是 "global"！)
 hl.animation({
 	leaf = "global",
 	enabled = true,
-	speed = 10, -- 建议补上 speed 和 bezier 防止底层 C++ 报错
+	speed = 10,
 	bezier = "default"
 })
 
--- 3. 配置各个具体动画节点 (严格遵循单个 table 传参，使用 bezier 字段)
 hl.animation({ leaf = "windows", enabled = true, speed = 7, bezier = "myBezier" })
 hl.animation({ leaf = "windowsIn", enabled = true, speed = 5, bezier = "myBezier" })
 hl.animation({ leaf = "windowsOut", enabled = true, speed = 10, bezier = "myBezier" })
@@ -104,15 +101,6 @@ hl.animation({ leaf = "border", enabled = true, speed = 10, bezier = "default" }
 hl.animation({ leaf = "borderangle", enabled = true, speed = 8, bezier = "default" })
 hl.animation({ leaf = "fade", enabled = true, speed = 7, bezier = "default" })
 hl.animation({ leaf = "workspaces", enabled = true, speed = 5, bezier = "myBezier", style = "slide" })
-
-
--- hl.curve("overshoot", { type = "bezier", points = { { 0.05, 0.9 }, { 0.1, 1.1 } } })
-
--- hl.animation({ leaf = "global", enabled = true, speed = 4, bezier = "overshoot" })
-
--- hl.animation({ leaf = "windows", enabled = true, speed = 4, bezier = "overshoot", style = "popin 87%" })
--- hl.animation({ leaf = "workspaces", enabled = true, speed = 4, bezier = "overshoot", style = "slidefade 20%" })
-
 
 
 
