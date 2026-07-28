@@ -102,6 +102,7 @@ fcitx5
 fcitx5-chinese-addons
 fcitx5-configtool
 fcitx5-qt
+fd
 ffmpeg
 fftw
 file
@@ -235,6 +236,7 @@ java-environment-common
 java-runtime-common
 jbigkit
 jdk-openjdk
+jemalloc
 jfsutils
 jq
 json-c
@@ -671,14 +673,18 @@ protobuf
 psmisc
 pugixml
 python
+python-attrs
 python-autocommand
 python-cairo
 python-certifi
+python-cffi
 python-charset-normalizer
 python-contourpy
+python-cryptography
 python-cycler
 python-dateutil
 python-docopt
+python-filelock
 python-fonttools
 python-gobject
 python-i3ipc
@@ -694,7 +700,9 @@ python-more-itertools
 python-numpy
 python-packaging
 python-pillow
+python-pip
 python-platformdirs
+python-pycparser
 python-pyparsing
 python-requests
 python-setuptools
@@ -832,6 +840,7 @@ totem-pl-parser
 tpm2-tss
 tree-sitter
 tree-sitter-c
+tree-sitter-cli
 tree-sitter-lua
 tree-sitter-markdown
 tree-sitter-query

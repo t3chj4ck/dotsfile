@@ -61,6 +61,7 @@ local servers = {
 	jsonls = {},
 	pyright = {},
 	cssls = {},
+	clangd = {}
 }
 
 mason_lspconfig.setup({
@@ -120,4 +121,14 @@ cmp.setup({
 		{ name = "buffer" },
 		{ name = "path" },
 	}),
+})
+
+
+-- error under line
+vim.diagnostic.config({
+	virtual_text = false,
+	virtual_lines = true,
+	signs = true,
+	underline = true,
+	update_in_insert = true,
 })

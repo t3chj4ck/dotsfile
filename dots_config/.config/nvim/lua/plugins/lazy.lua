@@ -89,6 +89,15 @@ require("lazy").setup({
 						hide_gitgnored = false,
 					},
 				},
+				event_handlers = {
+					{
+						event = "file_opened",
+						handler = function(file_path)
+							-- Auto-close Neo-tree when a file is opened
+							require("neo-tree.command").execute({ action = "close" })
+						end
+					},
+				}
 			})
 		end,
 	},
