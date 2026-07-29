@@ -1,4 +1,4 @@
-output eDP-1 scale 1.25
+output eDP-1 scale 1
 set $mod Mod4
 set $term kitty
 set $menu rofi -show run
@@ -27,7 +27,7 @@ exec throne &
 
 floating_modifier $mod
 
-bindsym Print exec bash -c 'mkdir -p ~/Pictures/Screenshots && grim -g "$(slurp)" - | tee ~/Pictures/Screenshots/$(date +%F_%H-%M-%S).png | wl-copy && notify-send "screenshot"'
+bindsym Print exec bash -c 'grim -g "$(slurp)" - | wl-copy && notify-send "screenshot"'
 
 
 #clipboard

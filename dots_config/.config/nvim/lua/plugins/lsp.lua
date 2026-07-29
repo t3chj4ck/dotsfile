@@ -126,8 +126,8 @@ cmp.setup({
 
 -- error under line
 vim.diagnostic.config({
-	virtual_text = false,
-	virtual_lines = true,
+	virtual_text = true,
+	virtual_lines = false,
 	signs = true,
 	underline = true,
 	update_in_insert = true,

@@ -90,7 +90,7 @@ hl.curve("myBezier", {
 hl.animation({
 	leaf = "global",
 	enabled = true,
-	speed = 10,
+	speed = 3,
 	bezier = "default"
 })
 
@@ -169,7 +169,7 @@ hl.bind(mainMod .. " + SHIFT + mouse:272", hl.dsp.window.resize(), { mouse = tru
 -- bindsym Print exec bash -c 'mkdir -p ~/Pictures/Screenshots && grim -g "$(slurp)" - | tee ~/Pictures/Screenshots/$(date +%F_%H-%M-%S).png | wl-copy && notify-send "screenshot"'
 hl.bind("Print",
 	hl.dsp.exec_cmd(
-		[[bash -c 'mkdir -p ~/Pictures/Screenshots && grim -g "$(slurp)" - | tee ~/Pictures/Screenshots/$(date +%F_%H-%M-%S).png | wl-copy && notify-send "screenshot"']]))
+		[[bash -c 'grim -g "$(slurp)" - | wl-copy && notify-send "screenshot"']]))
 
 -- clipboard
 -- bindsym $mod+v exec cliphist list | rofi -dmenu -p "clipboard history" | cliphist decode | wl-copy
