@@ -53,6 +53,7 @@ cblas
 cdparanoia
 cliphist
 cmake
+cmark-gfm
 compiler-rt
 composefs
 containerd
@@ -207,6 +208,7 @@ hicolor-icon-theme
 hidapi
 highway
 htop
+hunspell
 hwdata
 hwloc
 hyphen
@@ -232,6 +234,7 @@ iputils
 iso-codes
 iw
 jansson
+jasper
 java-environment-common
 java-runtime-common
 jbigkit
@@ -243,6 +246,7 @@ json-c
 jsoncpp
 json-glib
 kbd
+kcoreaddons
 kdbusaddons
 keyutils
 kitemviews
@@ -330,6 +334,7 @@ libdaemon
 libdatrie
 libdbusmenu-glib
 libdbusmenu-gtk3
+libde265
 libdecor
 libdeflate
 libdisplay-info
@@ -363,6 +368,7 @@ libgsf
 libgudev
 libgweather-4
 libgxps
+libheif
 libhwasan
 libice
 libidn2
@@ -393,6 +399,7 @@ libmalcontent
 libmanette
 libmd
 libmm-glib
+libmng
 libmnl
 libmodplug
 libmpc
@@ -759,8 +766,11 @@ qt5-base
 qt5-translations
 qt6-base
 qt6-declarative
+qt6-imageformats
 qt6-positioning
+qt6-svg
 qt6-translations
+qt6-wayland
 qt6-webchannel
 qt6-webengine
 rav1e
@@ -770,6 +780,7 @@ readline
 remmina
 rhash
 ripgrep
+rnnoise
 rofi
 rsync
 rubberband
@@ -828,6 +839,7 @@ systemd-sysvcompat
 taglib
 tar
 tdb
+telegram-desktop
 texinfo
 thin-provisioning-tools
 tinysparql
@@ -852,6 +864,7 @@ ttf-dejavu-nerd
 ttf-jetbrains-mono-nerd
 ttf-nerd-fonts-symbols
 ttf-nerd-fonts-symbols-common
+ttf-roboto
 twolame
 tzdata
 uchardet

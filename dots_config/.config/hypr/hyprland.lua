@@ -94,13 +94,13 @@ hl.animation({
 	bezier = "default"
 })
 
-hl.animation({ leaf = "windows", enabled = true, speed = 7, bezier = "myBezier" })
-hl.animation({ leaf = "windowsIn", enabled = true, speed = 5, bezier = "myBezier" })
-hl.animation({ leaf = "windowsOut", enabled = true, speed = 10, bezier = "myBezier" })
-hl.animation({ leaf = "border", enabled = true, speed = 10, bezier = "default" })
-hl.animation({ leaf = "borderangle", enabled = true, speed = 8, bezier = "default" })
-hl.animation({ leaf = "fade", enabled = true, speed = 7, bezier = "default" })
-hl.animation({ leaf = "workspaces", enabled = true, speed = 5, bezier = "myBezier", style = "slide" })
+hl.animation({ leaf = "windows", enabled = true, speed = 3, bezier = "myBezier" })
+hl.animation({ leaf = "windowsIn", enabled = true, speed = 3, bezier = "myBezier" })
+hl.animation({ leaf = "windowsOut", enabled = true, speed = 3, bezier = "myBezier" })
+hl.animation({ leaf = "border", enabled = true, speed = 3, bezier = "default" })
+hl.animation({ leaf = "borderangle", enabled = true, speed = 3, bezier = "default" })
+hl.animation({ leaf = "fade", enabled = true, speed = 3, bezier = "default" })
+hl.animation({ leaf = "workspaces", enabled = true, speed = 3, bezier = "myBezier", style = "slide" })
 
 
 
@@ -164,7 +164,7 @@ hl.config({
 
 -- floating_modifier $mod
 hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag(), { mouse = true })
-hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })
+hl.bind(mainMod .. " + SHIFT + mouse:272", hl.dsp.window.resize(), { mouse = true })
 
 -- bindsym Print exec bash -c 'mkdir -p ~/Pictures/Screenshots && grim -g "$(slurp)" - | tee ~/Pictures/Screenshots/$(date +%F_%H-%M-%S).png | wl-copy && notify-send "screenshot"'
 hl.bind("Print",
@@ -277,3 +277,8 @@ hl.bind(mainMod .. " + M", hl.dsp.exec_cmd("hyprctl dispatch 'hl.dsp.exit()'"))
 --------------------------------
 ---- WINDOWS AND WORKSPACES ----
 --------------------------------
+hl.bind(mainMod .. " + T", function()
+	os.execute("hyprctl dispatch togglefloating")
+	os.execute("hyprctl dispatch resizeactive exact 1000 700")
+	os.execute("hyprctl dispatch centerwindow")
+end)
