@@ -3,6 +3,7 @@ fontconfig
 libfontenc
 libxfont2
 noto-fonts
+noto-fonts-cjk
 noto-fonts-emoji
 otf-font-awesome
 python-fonttools

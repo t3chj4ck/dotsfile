@@ -615,6 +615,7 @@ node-gyp
 nodejs
 nodejs-nopt
 noto-fonts
+noto-fonts-cjk
 noto-fonts-emoji
 npm
 npth
@@ -909,7 +910,6 @@ woff2
 woff2-font-awesome
 wolfssl
 wpa_supplicant
-wqy-microhei
 x264
 x265
 xcb-imdkit
