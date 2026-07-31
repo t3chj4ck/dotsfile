@@ -14,7 +14,7 @@
 	// ==========================================
 	"clock": {
 		"interval": 60,
-		"format": "  {:%H:%M}",
+		"format": " {:%H:%M}",
 		"format-alt": "📅 {:%Y-%m-%d}",
 		"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
 		"calendar": {
@@ -74,7 +74,7 @@
 	// ==========================================
 	"network": {
 		"interval": 5,
-		"format-wifi": "  {essid}",
+		"format-wifi": " {essid}",
 		"format-ethernet": "󰈀 Wired",
 		"format-disconnected": "⚠ Disconnected",
 		"tooltip-format": "interface: {ifname} via {gwaddr}",
@@ -111,7 +111,7 @@
 		// "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
 		"critical-threshold": 80,
 		// "format-critical": "{temperatureC}°C {icon}",
-		"format": " {icon} {temperatureC}°C ",
+		"format": "{icon} {temperatureC}°C",
 		"format-icons": [
 			"",
 			"",
@@ -123,11 +123,11 @@
 	// ==========================================
 	"pulseaudio": {
 		// "scroll-step": 1, // %, can be a float
-		"format": " {icon} {volume}% {format_source} ",
-		"format-bluetooth": " {icon} {volume}% {format_source} ",
-		"format-bluetooth-muted": " {icon} {format_source}",
+		"format": "{icon} {volume}% {format_source}",
+		"format-bluetooth": " {icon} {volume}% {format_source}",
+		"format-bluetooth-muted": "  {icon} {format_source}",
 		"format-muted": " {format_source}",
-		"format-source": "  {volume}% ",
+		"format-source": " {volume}%",
 		"format-source-muted": "",
 		"format-icons": {
 			"headphone": "",

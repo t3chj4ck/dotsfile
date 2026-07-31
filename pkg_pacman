@@ -260,6 +260,7 @@ lame
 lapack
 lcms2
 leancrypto
+less
 lib32-brotli
 lib32-curl
 lib32-e2fsprogs
@@ -434,6 +435,7 @@ libpathrs
 libpcap
 libpciaccess
 libpgm
+libpipeline
 libpipewire
 libplacebo
 libplist
@@ -577,6 +579,7 @@ m4
 mailcap
 make
 mako
+man-db
 mangohud
 marisa
 md4c
@@ -612,7 +615,6 @@ node-gyp
 nodejs
 nodejs-nopt
 noto-fonts
-noto-fonts-cjk
 noto-fonts-emoji
 npm
 npth
@@ -907,6 +909,7 @@ woff2
 woff2-font-awesome
 wolfssl
 wpa_supplicant
+wqy-microhei
 x264
 x265
 xcb-imdkit
