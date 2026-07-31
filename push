@@ -5,7 +5,7 @@ my_commit="$(date)"
 
 pacman -Qnq | sort > ~/dotsfile/pkg_pacman
 pacman -Qmq | sort > ~/dotsfile/pkg_aur
-
+pacman -Q | grep -E 'font|ttf|otf' > ~/dotsfile/pacman_fonts_list.txt
 git add ~/dotsfile/.
 git commit -a -m "$my_commit"
 git push origin main

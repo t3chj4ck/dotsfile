@@ -1,6 +1,16 @@
-noto-fonts
-noto-fonts-cjk
-noto-fonts-emoji
-otf-font-awesome
-ttf-nerd-fonts-symbols
-woff2-font-awesome
+adwaita-fonts 50.0-1
+fontconfig 2:2.18.2-1
+libfontenc 1.1.9-1
+libxfont2 2.0.8-1
+noto-fonts 1:2026.07.01-1
+noto-fonts-emoji 1:2.051-1
+otf-font-awesome 7.3.1-1
+python-fonttools 4.63.0-1
+ttf-dejavu 2.37+18+g9b5d1b2f-8
+ttf-dejavu-nerd 3.4.0-2
+ttf-jetbrains-mono-nerd 3.4.0-2
+ttf-nerd-fonts-symbols 3.4.0-1
+ttf-nerd-fonts-symbols-common 3.4.0-1
+ttf-roboto 3.015-1
+woff2-font-awesome 7.3.1-1
+xorg-fonts-encodings 1.1.0-2
