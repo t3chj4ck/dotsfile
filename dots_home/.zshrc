@@ -6,7 +6,7 @@ export XDG_DATA_DIRS="$XDG_DATA_DIRS:$HOME/.local/share/flatpak/exports/share:/v
 export EDITOR=nvim
 export DISPLAY=:0
 export XDG_SESSION_TYPE=wayland
-
+export PATH=~/.npm-global/bin:$PATH
 
 
 source $ZSH/oh-my-zsh.sh

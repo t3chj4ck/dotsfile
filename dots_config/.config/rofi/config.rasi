@@ -1,5 +1,5 @@
 @theme "~/.config/rofi/theme.rasi"
 configuration {
-    font: "JetBrainsMono 16";
+    font: "JetBrainsMono 15";
 }
 

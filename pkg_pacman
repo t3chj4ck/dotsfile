@@ -54,6 +54,7 @@ cdparanoia
 cliphist
 cmake
 cmark-gfm
+code
 compiler-rt
 composefs
 containerd
@@ -89,6 +90,7 @@ e2fsprogs
 edk2-ovmf
 efibootmgr
 efivar
+electron42
 elfutils
 enchant
 exempi
@@ -132,9 +134,9 @@ gdb
 gdb-common
 gdbm
 gdk-pixbuf2
-geocode-glib
 gettext
 gexiv2
+gexiv2-common
 gfxstream
 ghidra
 giflib
@@ -179,12 +181,14 @@ gsettings-desktop-schemas
 gsettings-system-schemas
 gsm
 gssdp
+gst-plugin-gtk
 gst-plugins-bad-libs
 gst-plugins-base
 gst-plugins-base-libs
 gst-plugins-good
 gstreamer
 gtest
+gthumb
 gtk3
 gtk4
 gtk-layer-shell
@@ -198,7 +202,6 @@ gupnp
 gupnp-dlna
 gupnp-igd
 gvfs
-gweather-locations
 gzip
 harfbuzz
 harfbuzz-icu
@@ -208,6 +211,7 @@ hicolor-icon-theme
 hidapi
 highway
 htop
+hugo
 hunspell
 hwdata
 hwloc
@@ -353,6 +357,7 @@ libevent
 libexif
 libfdk-aac
 libffi
+libfido2
 libfontenc
 libfreeaptx
 libfyaml
@@ -366,7 +371,6 @@ libgomp
 libgpg-error
 libgsf
 libgudev
-libgweather-4
 libgxps
 libheif
 libhwasan
@@ -464,6 +468,7 @@ libsndfile
 libsodium
 libsoup3
 libsoxr
+libsrtp
 libssh
 libssh2
 libstdc++
@@ -561,7 +566,6 @@ llvm-libs
 lmdb
 lm_sensors
 localsearch
-loupe
 lrzip
 l-smash
 lsof

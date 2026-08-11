@@ -22,8 +22,7 @@ exec autotiling &
 exec udiskie &
 # exec kbuildsycoca6 --noincremental &
 exec waybar &
-exec throne &
-
+exec v2rayn &
 
 floating_modifier $mod
 
@@ -132,13 +131,12 @@ bindsym $mod+Shift+r reload
 bindsym $mod+m exit
 
 #app list
-exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway XDG_MENU_PREFIX=arch-
+exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway XDG_MENU_PREFIX=arch- DISPLAY
 
 exec swayidle -w \
-    timeout 600 hyprlock \
-    before-sleep hyprlock
-
-
+    timeout 600 'loginctl lock-session' \
+    before-sleep 'loginctl lock-session' \
+    lock 'swaylock -f -c 000000 --indicator-idle-visible'
 
 input "type:touchpad" {
     tap enabled
@@ -146,7 +144,7 @@ input "type:touchpad" {
 }
 
 input "type:pointer" {
-    accel_profile flat
+    # accel_profile flat
     pointer_accel 0
 }
 

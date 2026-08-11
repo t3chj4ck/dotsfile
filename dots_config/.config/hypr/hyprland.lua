@@ -9,7 +9,7 @@ hl.monitor({
 	output   = "",
 	mode     = "preferred",
 	position = "auto",
-	scale    = "1",
+	scale    = "1.25",
 })
 
 
@@ -68,11 +68,15 @@ hl.config({
 
 
 		blur = {
-			enabled           = true,
+			enabled           = false,
 			size              = 5,
 			passes            = 3,
 			new_optimizations = true,
 		},
+	},
+
+	xwayland = {
+		force_zero_scaling = true,
 	},
 
 	animations = {
@@ -90,17 +94,17 @@ hl.curve("myBezier", {
 hl.animation({
 	leaf = "global",
 	enabled = true,
-	speed = 3,
+	speed = 4,
 	bezier = "default"
 })
 
-hl.animation({ leaf = "windows", enabled = true, speed = 3, bezier = "myBezier" })
-hl.animation({ leaf = "windowsIn", enabled = true, speed = 3, bezier = "myBezier" })
-hl.animation({ leaf = "windowsOut", enabled = true, speed = 3, bezier = "myBezier" })
-hl.animation({ leaf = "border", enabled = true, speed = 3, bezier = "default" })
-hl.animation({ leaf = "borderangle", enabled = true, speed = 3, bezier = "default" })
-hl.animation({ leaf = "fade", enabled = true, speed = 3, bezier = "default" })
-hl.animation({ leaf = "workspaces", enabled = true, speed = 3, bezier = "myBezier", style = "slide" })
+-- hl.animation({ leaf = "windows", enabled = true, speed = 7, bezier = "myBezier" })
+-- hl.animation({ leaf = "windowsIn", enabled = true, speed = 7, bezier = "myBezier" })
+-- hl.animation({ leaf = "windowsOut", enabled = true, speed = 7, bezier = "myBezier" })
+-- hl.animation({ leaf = "border", enabled = true, speed = 7, bezier = "default" })
+-- hl.animation({ leaf = "borderangle", enabled = true, speed = 7, bezier = "default" })
+-- hl.animation({ leaf = "fade", enabled = true, speed = 10, bezier = "default" })
+-- hl.animation({ leaf = "workspaces", enabled = true, speed = 7, bezier = "myBezier", style = "slide" })
 
 
 
@@ -142,15 +146,15 @@ end)
 -- input "type:pointer"  { accel_profile flat; pointer_accel 0 }
 hl.config({
 	input = {
-		kb_layout     = "us,ru",
-		kb_variant    = "",
-		kb_model      = "",
-		kb_options    = "grp:alt_space_toggle",
-		kb_rules      = "",
+		kb_layout   = "us,ru",
+		kb_variant  = "",
+		kb_model    = "",
+		kb_options  = "grp:alt_space_toggle",
+		kb_rules    = "",
 
-		sensitivity   = 0.5, -- pointer_accel 0
-		accel_profile = "flat",
-		touchpad      = {
+		sensitivity = 0, -- pointer_accel 0
+		-- accel_profile = "flat",
+		touchpad    = {
 			natural_scroll = true,
 			tap_to_click   = true,
 		},
