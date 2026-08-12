@@ -52,6 +52,8 @@ c-ares
 cblas
 cdparanoia
 cliphist
+clipmenu
+clipnotify
 cmake
 cmark-gfm
 code
@@ -77,6 +79,7 @@ desktop-file-utils
 device-mapper
 dhcpcd
 diffutils
+dmenu
 dnsmasq
 docker
 docker-compose
@@ -206,7 +209,6 @@ gzip
 harfbuzz
 harfbuzz-icu
 hdparm
-helix
 hicolor-icon-theme
 hidapi
 highway
@@ -780,6 +782,7 @@ qt6-wayland
 qt6-webchannel
 qt6-webengine
 rav1e
+rclone
 rdma-core
 re2
 readline
@@ -932,16 +935,22 @@ xdg-desktop-portal-gtk
 xdg-user-dirs
 xdg-user-dirs-gtk
 xdg-utils
+xdotool
 xfsprogs
 xkeyboard-config
 xorg-fonts-encodings
 xorgproto
 xorg-server-common
 xorg-setxkbmap
+xorg-xauth
 xorg-xhost
+xorg-xinit
 xorg-xkbcomp
+xorg-xmodmap
 xorg-xprop
+xorg-xrdb
 xorg-xwayland
+xsel
 xvidcore
 xxhash
 xz
