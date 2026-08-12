@@ -9,7 +9,6 @@ client.focused #ffffff #ffffff #ffffff #ffffff
 
 
 
-
 exec fcitx5 &
 exec nm-applet &
 exec blueman-applet &

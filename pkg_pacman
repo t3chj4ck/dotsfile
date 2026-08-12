@@ -396,7 +396,6 @@ liblc3
 libldac
 libldap
 libldm
-libliftoff
 liblqr
 liblsan
 libluv
@@ -837,7 +836,6 @@ strace
 sudo
 svt-av1
 swappy
-sway
 swaybg
 swayidle
 swaylock
@@ -912,7 +910,6 @@ wget
 which
 wireplumber
 wl-clipboard
-wlroots0.20
 woff2
 woff2-font-awesome
 wolfssl

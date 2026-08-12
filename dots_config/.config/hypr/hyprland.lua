@@ -123,7 +123,7 @@ hl.on("hyprland.start", function()
 	hl.exec_cmd("~/script/swaybg_startup.sh")
 	hl.exec_cmd("udiskie")
 	hl.exec_cmd("waybar")
-	hl.exec_cmd("throne")
+	hl.exec_cmd("xrdb -merge ~/.Xresources")
 end)
 
 hl.on("hyprland.start", function()
@@ -276,13 +276,3 @@ hl.bind(mainMod .. " + SHIFT + R", hl.dsp.exec_cmd("hyprctl reload"))
 
 -- bindsym $mod+m exit
 hl.bind(mainMod .. " + M", hl.dsp.exec_cmd("hyprctl dispatch 'hl.dsp.exit()'"))
-
-
---------------------------------
----- WINDOWS AND WORKSPACES ----
---------------------------------
-hl.bind(mainMod .. " + T", function()
-	os.execute("hyprctl dispatch togglefloating")
-	os.execute("hyprctl dispatch resizeactive exact 1000 700")
-	os.execute("hyprctl dispatch centerwindow")
-end)
