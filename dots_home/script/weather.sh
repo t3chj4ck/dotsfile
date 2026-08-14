@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CITY=liaocheng
+CITY=dongguan
 
 while true; do
 	result=$(curl -s -f "wttr.in/${CITY}?format=%c+%t&m" 2>/dev/null)

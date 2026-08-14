@@ -1,13 +1,11 @@
-output eDP-1 scale 1
+output eDP-1 scale 1.25
 set $mod Mod4
 set $term kitty
 set $menu rofi -show run
-gaps outer 8
-gaps inner 4
+gaps outer 2
+gaps inner 2
 for_window [class="^.*"] border pixel 2
 client.focused #ffffff #ffffff #ffffff #ffffff
-
-
 
 exec fcitx5 &
 exec nm-applet &
@@ -21,7 +19,8 @@ exec autotiling &
 exec udiskie &
 # exec kbuildsycoca6 --noincremental &
 exec waybar &
-exec v2rayn &
+
+
 
 floating_modifier $mod
 
