@@ -234,6 +234,7 @@ hyprtoolkit
 hyprutils
 hyprwayland-scanner
 hyprwire
+i3lock
 iana-etc
 icu
 imagemagick
@@ -955,6 +956,7 @@ xcb-util-image
 xcb-util-keysyms
 xcb-util-renderutil
 xcb-util-wm
+xcb-util-xrm
 xclip
 xcur2png
 xdg-dbus-proxy
@@ -979,8 +981,10 @@ xorg-xkbcomp
 xorg-xmodmap
 xorg-xprop
 xorg-xrdb
+xorg-xset
 xorg-xwayland
 xsel
+xss-lock
 xvidcore
 xxhash
 xz
