@@ -4,11 +4,11 @@ vim.keymap.set({ 'n', 'v' }, 'd', '"_d', { noremap = true })
 vim.keymap.set({ 'n', 'v' }, 'D', '"_D', { noremap = true })
 
 --format when save
-vim.api.nvim_create_autocmd("BufWritePre", {
-	callback = function()
-		vim.lsp.buf.format()
-	end,
-})
+-- vim.api.nvim_create_autocmd("BufWritePre", {
+-- 	callback = function()
+-- 		vim.lsp.buf.format()
+-- 	end,
+-- })
 
 
 -- disable theme

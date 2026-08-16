@@ -1,13 +1,13 @@
 
 # BEGIN_KITTY_FONTS
 font_family      family="JetBrainsMono Nerd Font Mono"
-font_size 15
+font_size 13
 bold_font        auto
 italic_font      auto
 bold_italic_font auto
 # END_KITTY_FONTS
 cursor_trail 3
-background_opacity 0.9
+# background_opacity 0.9
 
 enable_audio_bell no
 #: Fonts {{{
@@ -3305,9 +3305,3 @@ enable_audio_bell no
 #: }}}
 
 #: }}}
-
-
-# BEGIN_KITTY_THEME
-# Kanagawa_dragon
-include current-theme.conf
-# END_KITTY_THEME

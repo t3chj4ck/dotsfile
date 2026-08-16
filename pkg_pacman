@@ -29,6 +29,7 @@ base
 base-devel
 bash
 bc
+bear
 binutils
 bison
 blas
@@ -50,6 +51,7 @@ capstone
 c-ares
 cblas
 cdparanoia
+clang
 cliphist
 clipmenu
 clipnotify
@@ -88,6 +90,7 @@ dotnet-runtime-8.0
 double-conversion
 dtc
 duktape
+dunst
 e2fsprogs
 edk2-ovmf
 efibootmgr
@@ -106,8 +109,10 @@ fcft
 fcitx5
 fcitx5-chinese-addons
 fcitx5-configtool
+fcitx5-gtk
 fcitx5-qt
 fd
+feh
 ffmpeg
 fftw
 file
@@ -143,6 +148,7 @@ gfxstream
 ghidra
 giflib
 git
+glew
 glfw
 glib2
 glibc
@@ -334,6 +340,7 @@ libcdio
 libcdio-paranoia
 libcloudproviders
 libcolord
+libconfig
 libcue
 libcups
 libdaemon
@@ -354,6 +361,7 @@ libedit
 libei
 libelf
 libepoxy
+libev
 libevdev
 libevent
 libexif
@@ -396,6 +404,7 @@ liblc3
 libldac
 libldap
 libldm
+libliftoff
 liblqr
 liblsan
 libluv
@@ -583,6 +592,7 @@ lzo
 lzop
 m4
 mailcap
+maim
 make
 mako
 man-db
@@ -667,6 +677,7 @@ perl-error
 perl-mailtools
 perl-timedate
 phodav
+picom
 pinentry
 pipewire
 pipewire-audio
@@ -787,8 +798,6 @@ qemu-ui-spice-app
 qemu-ui-spice-core
 qemu-vhost-user-gpu
 qhull
-qt5-base
-qt5-translations
 qt6-base
 qt6-declarative
 qt6-imageformats
@@ -829,6 +838,7 @@ shadow
 shared-mime-info
 simdjson
 slang
+slop
 slurp
 snappy
 sndio
@@ -855,6 +865,8 @@ sudo
 svt-av1
 swappy
 swaybg
+swayidle
+swaylock
 sysfsutils
 syslinux
 systemd
@@ -867,6 +879,7 @@ telegram-desktop
 texinfo
 thin-provisioning-tools
 tinysparql
+tllist
 tlp
 tlp-pd
 tlp-rdw
@@ -920,6 +933,7 @@ wavpack
 waybar
 wayland
 wayland-protocols
+wayland-utils
 webkit2gtk-4.1
 webrtc-audio-processing-1
 wget
@@ -941,6 +955,7 @@ xcb-util-image
 xcb-util-keysyms
 xcb-util-renderutil
 xcb-util-wm
+xclip
 xcur2png
 xdg-dbus-proxy
 xdg-desktop-portal
@@ -949,10 +964,12 @@ xdg-user-dirs
 xdg-user-dirs-gtk
 xdg-utils
 xdotool
+xf86-input-libinput
 xfsprogs
 xkeyboard-config
 xorg-fonts-encodings
 xorgproto
+xorg-server
 xorg-server-common
 xorg-setxkbmap
 xorg-xauth
