@@ -15,7 +15,6 @@ amd-ucode
 android-tools
 aom
 appstream
-aquamarine
 archlinux-keyring
 atkmm
 at-spi2-core
@@ -223,17 +222,11 @@ hunspell
 hwdata
 hwloc
 hyphen
-hyprcursor
 hyprgraphics
-hypridle
-hyprland
-hyprland-guiutils
 hyprlang
 hyprlock
-hyprtoolkit
 hyprutils
 hyprwayland-scanner
-hyprwire
 i3lock
 iana-etc
 icu
@@ -602,6 +595,7 @@ marisa
 md4c
 mdadm
 mesa
+meson
 minizip
 mkinitcpio
 mkinitcpio-busybox
@@ -614,7 +608,6 @@ msgpack-c
 mtdev
 mtools
 mujs
-muparser
 nano
 nautilus
 ncdu
@@ -749,6 +742,7 @@ python-setuptools
 python-shtab
 python-six
 python-stack-data
+python-tqdm
 python-traitlets
 python-typing_extensions
 python-urllib3
@@ -885,7 +879,6 @@ tlp
 tlp-pd
 tlp-rdw
 tlpui
-tomlplusplus
 totem-pl-parser
 tpm2-tss
 tree-sitter
@@ -937,12 +930,14 @@ wayland-protocols
 wayland-utils
 webkit2gtk-4.1
 webrtc-audio-processing-1
+wev
 wget
 which
 wireplumber
 wl-clipboard
 woff2
 woff2-font-awesome
+wofi
 wolfssl
 wpa_supplicant
 x264
@@ -977,9 +972,11 @@ xorg-setxkbmap
 xorg-xauth
 xorg-xhost
 xorg-xinit
+xorg-xinput
 xorg-xkbcomp
 xorg-xmodmap
 xorg-xprop
+xorg-xrandr
 xorg-xrdb
 xorg-xset
 xorg-xwayland

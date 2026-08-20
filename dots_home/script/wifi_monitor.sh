@@ -1,7 +1,5 @@
 #!/bin/bash
 
-SIGNAL_NUM=3
-
 ip monitor link | while read -r _; do
-    pkill -RTMIN+${SIGNAL_NUM} dwmblocks
+    pkill -RTMIN+10 someblocks
 done

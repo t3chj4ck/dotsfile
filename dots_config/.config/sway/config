@@ -11,8 +11,8 @@ exec fcitx5 &
 exec nm-applet &
 exec blueman-applet &
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
-exec wl-paste --type text --watch cliphist store &
-exec wl-paste --type image --watch cliphist store &
+exec wl-paste --type text --watch cliphist store -db-path /tmp/ &
+exec wl-paste --type image --watch cliphist store -db-path /tmp/ &
 exec mako &
 exec ~/script/swaybg_startup.sh &
 exec autotiling &

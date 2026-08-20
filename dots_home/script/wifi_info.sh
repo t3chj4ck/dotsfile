@@ -1,8 +1,10 @@
 #!/bin/bash
-wifi_info=$(nmcli -t -f ACTIVE,SSID,SIGNAL dev wifi 2>/dev/null | awk -F: '$1=="yes" {print $2, $3"%"}')
+SSID=$(nmcli -t -f ACTIVE,SSID dev wifi 2>/dev/null | awk -F: '$1=="yes" {print $2}')
 
-if [ -n "$wifi_info" ]; then
-    echo "[󰀂 $wifi_info]"
+SIGNAL=$(nmcli -t -f ACTIVE,SIGNAL dev wifi 2>/dev/null | awk -F: '$1=="yes" {print $2}')
+
+if [ -n "$SSID" ]; then
+    echo "$SSID: $SIGNAL%"
 else
-    echo "[󰀂 no wifi]"
+    echo "No WIFI"
 fi
