@@ -621,6 +621,7 @@ nftables
 nilfs-utils
 ninja
 nm-connection-editor
+nnn
 node-gyp
 nodejs
 nodejs-nopt
