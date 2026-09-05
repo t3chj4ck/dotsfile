@@ -10,7 +10,9 @@ wl-paste --type text --watch cliphist store -db-path /tmp/ &
 ~/script/swaybg_startup.sh &
 udiskie &
 dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=wlroots XDG_MENU_PREFIX=arch- &
-swayidle -w timeout 600 'loginctl lock-session' before-sleep 'loginctl lock-session' lock 'swaylock -f -c 000000 --indicator-idle-visible' &
+hypridle &
 ~/script/wifi_monitor.sh &
-someblocks &
-somebar
+
+
+mkfifo /tmp/kwm_status 2>/dev/null
+someblocks -p > /tmp/kwm_status &

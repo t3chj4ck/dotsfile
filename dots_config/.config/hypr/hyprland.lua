@@ -21,7 +21,7 @@ hl.monitor({
 -- set $term kitty
 -- set $menu rofi -show run
 local mainMod  = "SUPER"
-local terminal = "kitty"
+local terminal = "foot"
 local menu     = "rofi -show run"
 
 

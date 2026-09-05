@@ -1,0 +1,49 @@
+#!/bin/bash
+
+
+#keymap
+riverctl map normal Mod4+Shift Return spawn foot
+riverctl map normal Mod1 F4 close
+riverctl map normal Mod4 R spawn "sh -c 'tofi-run | sh'"
+riverctl map normal Mod4+Shift BackSpace exit
+riverctl map normal Mod4 F toggle-fullscreen
+riverctl map normal Mod4 Space toggle-float
+
+
+
+#tag
+for i in $(seq 1 9); do
+    tags=$((1 << ($i - 1)))
+    riverctl map normal Mod4 $i set-focused-tags $tags
+    riverctl map normal Mod4+Shift $i set-view-tags $tags    
+
+
+#workfolow
+riverctl map normal Mod4 J focus-view next
+riverctl map normal Mod4 K focus-view previous
+
+riverctl map normal Mod4+Shift J swap next
+riverctl map normal Mod4+Shift K swap previous
+
+riverctl map normal Mod4 H send-layout-cmd rivertile "main-ratio -0.05"
+riverctl map normal Mod4 L send-layout-cmd rivertile "main-ratio +0.05"
+
+
+#appearance
+riverctl border-width 2
+riverctl background-color 0x000000
+riverctl border-color-focused 0x7aa2f7
+riverctl border-color-unfocused 0x3b4252
+
+
+#input
+riverctl input "type:keyboard" xkb-layout "us"
+riverctl input "type:pointer" tap enabled
+
+#tilling
+riverctl default-layout rivertile
+rivertile -view-padding 4 -outer-padding 4 &
+
+#autostart
+autostart.sh &
+

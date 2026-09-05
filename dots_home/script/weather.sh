@@ -8,5 +8,6 @@ while true; do
 		echo "$result"
 		break
 	fi
+	echo ""
 	sleep 1
 done

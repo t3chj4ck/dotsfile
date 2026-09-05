@@ -61,7 +61,8 @@ local servers = {
 	jsonls = {},
 	pyright = {},
 	cssls = {},
-	clangd = {}
+	clangd = {},
+	zls = {}
 }
 
 mason_lspconfig.setup({

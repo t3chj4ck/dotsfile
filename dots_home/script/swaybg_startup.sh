@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
 DIR=$(cat ~/script/wallpaper_dir)
-swaybg -i "$DIR" -m fill
+swaybg -i "$DIR"
 

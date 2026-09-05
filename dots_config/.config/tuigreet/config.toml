@@ -59,7 +59,7 @@ max_speed = 1.10
 mutate_chance = 0.02 # per-cell glyph shimmer probability
 
 [session]
-sessions_dirs = ["/usr/share/wayland-sessions", "/usr/share/xsessions"]
+sessions_dirs = []
 xsessions_dirs = []
 environments = []
 
