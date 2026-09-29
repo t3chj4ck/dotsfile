@@ -9,6 +9,7 @@ export XDG_SESSION_TYPE=wayland
 export PATH=~/.npm-global/bin:$PATH
 
 
+
 source $ZSH/oh-my-zsh.sh
 
 

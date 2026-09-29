@@ -56,11 +56,22 @@
     //      disable_while_typing: .enabled or .disabled
     //      disable_while_trackpointing: .enabled or .disabled
     //      rotation_angle: u32
-    .libinput_device_rules = .{
-        .{ .name = .{ .str = ".*[tT]ouchpad", .regex = true }, .tap = .enabled, .drag = .enabled, .natural_scroll = .enabled },
-        .{ .tap = .enabled, .drag = .enabled }
-    },
-
+            .libinput_device_rules = .{
+                .{
+                    .name = .{ .str = ".*[tT]ouchpad", .regex = true },
+                    .tap = .enabled,
+                    .drag = .enabled,
+                    .natural_scroll = .enabled,
+                    .accel_speed = 0.2,
+                    .accel_profile = .adaptive,
+                },
+                .{
+                    .tap = .enabled,
+                    .drag = .enabled,
+                    .accel_speed = 0.2,
+                    .accel_profile = .adaptive,
+                },
+            },
     // xkb_keyboard rules
     // full scheme:
     //      name: rule pattern

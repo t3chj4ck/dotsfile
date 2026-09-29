@@ -7,6 +7,7 @@ noto-fonts-cjk
 noto-fonts-emoji
 otf-font-awesome
 python-fonttools
+terminus-font
 ttf-dejavu
 ttf-dejavu-nerd
 ttf-jetbrains-mono-nerd

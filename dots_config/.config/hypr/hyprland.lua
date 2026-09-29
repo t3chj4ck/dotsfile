@@ -21,7 +21,7 @@ hl.monitor({
 -- set $term kitty
 -- set $menu rofi -show run
 local mainMod  = "SUPER"
-local terminal = "foot"
+local terminal = "kitty"
 local menu     = "rofi -show run"
 
 
@@ -39,7 +39,7 @@ local menu     = "rofi -show run"
 hl.config({
 	general = {
 		gaps_in     = 4,
-		gaps_out    = 8,
+		gaps_out    = 0,
 		border_size = 2,
 
 		col         = {
@@ -53,14 +53,14 @@ hl.config({
 
 	decoration = {
 		rounding         = 0,
-		rounding_power   = 2,
+		rounding_power   = 0,
 
 		-- Change transparency of focused and unfocused windows
 		active_opacity   = 1.0,
 		inactive_opacity = 1.0,
 
 		shadow           = {
-			enabled      = true,
+			enabled      = false,
 			range        = 4,
 			render_power = 3,
 			color        = 0xee1a1a1a,
@@ -77,6 +77,7 @@ hl.config({
 
 	xwayland = {
 		force_zero_scaling = true,
+		enabled = false
 	},
 
 	animations = {
@@ -114,25 +115,20 @@ hl.animation({
 
 hl.on("hyprland.start", function()
 	hl.exec_cmd("fcitx5")
-	hl.exec_cmd("nm-applet")
-	hl.exec_cmd("blueman-applet")
+	hl.exec_cmd("throne")
+	-- hl.exec_cmd("nm-applet")
+	-- hl.exec_cmd("blueman-applet")
 	hl.exec_cmd("/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1")
 	hl.exec_cmd("wl-paste --type text --watch cliphist store")
 	hl.exec_cmd("wl-paste --type image --watch cliphist store")
 	hl.exec_cmd("mako")
 	hl.exec_cmd("~/script/swaybg_startup.sh")
-	hl.exec_cmd("udiskie")
 	hl.exec_cmd("waybar")
 	hl.exec_cmd("xrdb -merge ~/.Xresources")
-end)
-
-hl.on("hyprland.start", function()
-	hl.exec_cmd(
-		"dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=Hyprland XDG_MENU_PREFIX=arch-")
-end)
-
-hl.on("hyprland.start", function()
 	hl.exec_cmd("hypridle")
+	hl.exec_cmd(
+		"dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=Hyprland XDG_SESSION_TYPE=wayland XDG_MENU_PREFIX=arch-"
+	)
 end)
 
 
@@ -181,7 +177,7 @@ hl.bind(mainMod .. " + V",
 	hl.dsp.exec_cmd([[cliphist list | rofi -dmenu -p "clipboard history" | cliphist decode | wl-copy]]))
 
 -- bindsym $mod+q exec $term
-hl.bind(mainMod .. " + Q", hl.dsp.exec_cmd(terminal))
+hl.bind(mainMod .. " + SHIFT + return", hl.dsp.exec_cmd(terminal))
 
 -- bindsym $mod+r exec $menu
 hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(menu))
@@ -202,7 +198,7 @@ hl.bind(mainMod .. " + SHIFT + up", hl.dsp.window.move({ direction = "up" }))
 hl.bind(mainMod .. " + SHIFT + right", hl.dsp.window.move({ direction = "right" }))
 
 -- bindsym $mod+f fullscreen toggle
-hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen())
+hl.bind(mainMod .. " + return", hl.dsp.window.fullscreen())
 
 -- bindsym $mod+h layout toggle split
 hl.bind(mainMod .. " + H", hl.dsp.layout("togglesplit"))
