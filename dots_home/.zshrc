@@ -5,7 +5,6 @@ export PATH="$PATH:/home/t3chj4ck/.cargo/bin"
 export XDG_DATA_DIRS="$XDG_DATA_DIRS:$HOME/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share"
 export EDITOR=nvim
 export DISPLAY=:0
-export XDG_SESSION_TYPE=wayland
 export PATH=~/.npm-global/bin:$PATH
 
 
@@ -54,7 +53,6 @@ zinit load zsh-users/zsh-syntax-highlighting
 #     tmux attach-session -t default 2>/dev/null || tmux new-session -s default
 # fi
 
-alias hx=helix
 
 
 
