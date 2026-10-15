@@ -57,3 +57,6 @@ zinit load zsh-users/zsh-syntax-highlighting
 
 
 eval "$(starship init zsh)"
+
+# Added by browser-skill install.sh
+export PATH="$HOME/.local/bin:$PATH"

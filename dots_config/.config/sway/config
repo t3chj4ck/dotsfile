@@ -1,11 +1,13 @@
 output eDP-1 scale 1.25
 set $mod Mod4
-set $term kitty
+set $term foot
 set $menu rofi -show run
 gaps outer 0
 gaps inner 0
 for_window [class="^.*"] border pixel 2
 client.focused #ffffff #ffffff #ffffff #ffffff
+
+xwayland disable
 
 exec fcitx5 &
 exec nm-applet &
@@ -16,8 +18,7 @@ exec mako &
 exec ~/script/swaybg_startup.sh &
 # exec kbuildsycoca6 --noincremental &
 exec waybar &
-
-
+exec v2rayn &
 
 floating_modifier $mod
 
@@ -39,7 +40,7 @@ bindsym $mod+Shift+up move up
 bindsym $mod+Shift+right move right
 bindsym $mod+return fullscreen toggle
 bindsym $mod+h layout toggle split
-bindsym $mod+e exec nautilus
+bindsym $mod+e exec dolphin
 bindsym $mod+space floating toggle
 bindsym $mod+a focus parent
 

@@ -15,8 +15,11 @@ amd-ucode
 android-tools
 aom
 appstream
+appstream-qt
 aquamarine
+archlinux-appstream-data
 archlinux-keyring
+ark
 atkmm
 at-spi2-core
 attica
@@ -92,6 +95,8 @@ desktop-file-utils
 device-mapper
 dhcpcd
 diffutils
+discount
+discover
 dmenu
 dnsmasq
 docker
@@ -270,6 +275,7 @@ jq
 json-c
 jsoncpp
 json-glib
+kaccounts-integration
 karchive
 kbd
 kbookmarks
@@ -295,6 +301,8 @@ kidletime
 kio
 kio-extras
 kirigami
+kirigami-addons
+kitemmodels
 kitemviews
 kitty
 kitty-shell-integration
@@ -305,8 +313,11 @@ knewstuff
 knotifications
 kpackage
 kparts
+kpty
 krb5
 kservice
+kstatusnotifieritem
+ksvg
 ktextwidgets
 kuserfeedback
 kwallet
@@ -345,6 +356,8 @@ lib32-openssl
 lib32-p11-kit
 lib32-zlib
 lib32-zstd
+libaccounts-glib
+libaccounts-qt
 libadwaita
 libaec
 libaemu
@@ -449,6 +462,7 @@ liblc3
 libldac
 libldap
 libldm
+libliftoff
 liblqr
 liblsan
 libluv
@@ -760,6 +774,7 @@ procps-ng
 protobuf
 psmisc
 pugixml
+purpose
 python
 python-absl
 python-argcomplete
@@ -822,6 +837,7 @@ python-wheel
 python-yaml
 qalculate-gtk
 qca-qt6
+qcoro
 qemu-audio-alsa
 qemu-audio-dbus
 qemu-audio-jack
@@ -865,8 +881,10 @@ qemu-ui-spice-app
 qemu-ui-spice-core
 qemu-vhost-user-gpu
 qhull
+qqc2-desktop-style
 qt6-5compat
 qt6-base
+qt6ct
 qt6-declarative
 qt6-imageformats
 qt6-multimedia
@@ -880,6 +898,8 @@ qt6-translations
 qt6-wayland
 qt6-webchannel
 qt6-webengine
+qt6-websockets
+qt6-webview
 rav1e
 rdma-core
 re2
@@ -909,6 +929,10 @@ serd
 shaderc
 shadow
 shared-mime-info
+signond
+signon-kwallet-extension
+signon-plugin-oauth2
+signon-ui
 simdjson
 slang
 slop
@@ -940,6 +964,7 @@ strace
 sudo
 svt-av1
 swappy
+sway
 swaybg
 swayidle
 swaylock
@@ -1026,6 +1051,7 @@ wget
 which
 wireplumber
 wl-clipboard
+wlroots0.20
 woff2-font-awesome
 wofi
 wolfssl
@@ -1071,6 +1097,7 @@ xorg-xwayland
 xsel
 xss-lock
 xvidcore
+xwayland-satellite
 xxhash
 xz
 yaml-cpp
