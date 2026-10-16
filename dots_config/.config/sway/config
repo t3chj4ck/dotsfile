@@ -18,7 +18,6 @@ exec mako &
 exec ~/script/swaybg_startup.sh &
 # exec kbuildsycoca6 --noincremental &
 exec waybar &
-exec v2rayn &
 
 floating_modifier $mod
 

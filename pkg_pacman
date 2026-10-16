@@ -72,6 +72,7 @@ code
 compiler-rt
 compiler-rt21
 composefs
+confuse
 containerd
 convertlit
 coreutils
@@ -250,7 +251,10 @@ hyprtoolkit
 hyprutils
 hyprwayland-scanner
 hyprwire
+i3blocks
 i3lock
+i3status
+i3-wm
 iana-etc
 icu
 imagemagick
@@ -940,6 +944,7 @@ slurp
 smbclient
 snappy
 sndio
+snixembed
 solid
 sonnet
 sord
@@ -1097,9 +1102,9 @@ xorg-xwayland
 xsel
 xss-lock
 xvidcore
-xwayland-satellite
 xxhash
 xz
+yajl
 yaml-cpp
 yarn
 yazi

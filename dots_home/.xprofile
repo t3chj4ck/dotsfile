@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+# Set input method environment variables
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS=@im=fcitx
+export INPUT_METHOD=fcitx
+export SDL_IM_MODULE=fcitx
+export GLFW_IM_MODULE=ibus
+export CM_LAUNCHER=rofi
+export MOZ_USE_XINPUT2=1
+export XDG_SESSION_TYPE=x11
+# Update DBus environment
+dbus-update-activation-environment --systemd --all

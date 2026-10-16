@@ -1,0 +1,107 @@
+set $mod Mod4
+set $term kitty
+set $menu rofi -show run
+
+font pango:JetBrainsMono Nerd Font, Noto Sans CJK SC, JoyPixels 10
+default_border pixel 2
+default_floating_border pixel 2
+hide_edge_borders smart
+
+# class                 border  bground  text    indicator  child_border
+client.focused          #ff4722 #ff4722  #eeeeee #ff4722    #ff4722
+client.focused_inactive #444444 #222222  #bbbbbb #444444    #444444
+client.unfocused        #444444 #222222  #bbbbbb #444444    #444444
+client.urgent           #ff4722 #ff4722  #eeeeee #ff4722    #ff4722
+client.placeholder      #444444 #222222  #bbbbbb #444444    #444444
+client.background       #222222
+
+floating_modifier $mod
+
+focus_follows_mouse no
+workspace_auto_back_and_forth no
+
+# term/menu
+bindsym $mod+r exec $menu
+bindsym $mod+Shift+Return exec $term
+
+# toggle bar
+bindsym $mod+b bar mode toggle
+
+# focus
+bindsym $mod+j focus next
+bindsym $mod+k focus prev
+
+bindsym $mod+Shift+r reload
+
+
+bindsym $mod+Return exec --no-startup-id ~/script/i3-zoom.sh
+
+##### dwm Mod+v clipmenu #####
+bindsym $mod+v exec clipmenu
+
+bindsym $mod+Tab workspace back_and_forth
+
+##### dwm Alt+F4 killclient #####
+bindsym Mod1+F4 kill
+
+bindsym $mod+space layout toggle split tabbed stacking
+# dwm Mod+t tile / Mod+f floating / Mod+m monocle
+bindsym $mod+t layout default
+bindsym $mod+f floating toggle
+bindsym $mod+m fullscreen toggle
+# dwm togglefloating
+bindsym $mod+Shift+space floating toggle
+bindsym $mod+h resize shrink width 32 px or 5 ppt
+bindsym $mod+l resize grow width 32 px or 5 ppt
+
+##### workspaces 1–9：view / move（dwm TAGKEYS）#####
+bindsym $mod+1 workspace number 1
+bindsym $mod+2 workspace number 2
+bindsym $mod+3 workspace number 3
+bindsym $mod+4 workspace number 4
+bindsym $mod+5 workspace number 5
+bindsym $mod+6 workspace number 6
+bindsym $mod+7 workspace number 7
+bindsym $mod+8 workspace number 8
+bindsym $mod+9 workspace number 9
+bindsym $mod+Shift+1 move container to workspace number 1
+bindsym $mod+Shift+2 move container to workspace number 2
+bindsym $mod+Shift+3 move container to workspace number 3
+bindsym $mod+Shift+4 move container to workspace number 4
+bindsym $mod+Shift+5 move container to workspace number 5
+bindsym $mod+Shift+6 move container to workspace number 6
+bindsym $mod+Shift+7 move container to workspace number 7
+bindsym $mod+Shift+8 move container to workspace number 8
+bindsym $mod+Shift+9 move container to workspace number 9
+
+bindsym $mod+comma focus output left
+bindsym $mod+period focus output right
+bindsym $mod+Shift+comma move container to output left
+bindsym $mod+Shift+period move container to output right
+
+bindsym XF86AudioRaiseVolume exec --no-startup-id "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+"
+bindsym XF86AudioLowerVolume exec --no-startup-id "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
+bindsym XF86AudioMute exec --no-startup-id "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+bindsym XF86MonBrightnessUp exec --no-startup-id "brightnessctl set 10%+"
+bindsym XF86MonBrightnessDown exec --no-startup-id "brightnessctl set 10%-"
+
+bindsym Print exec --no-startup-id "maim -s | xclip -selection clipboard -t image/png"
+
+##### dwm Mod+Shift+q quit #####
+bindsym $mod+Shift+q exit
+
+bar {
+    position top
+    status_command i3status
+    font pango:JetBrainsMono Nerd Font, Noto Sans CJK SC, JoyPixels 10
+    separator_symbol " | "
+    colors {
+        background #222222
+        statusline #bbbbbb
+        separator  #444444
+        focused_workspace  #ff4722 #ff4722 #eeeeee
+        active_workspace   #444444 #222222 #bbbbbb
+        inactive_workspace #222222 #222222 #bbbbbb
+        urgent_workspace   #ff4722 #ff4722 #eeeeee
+    }
+}
