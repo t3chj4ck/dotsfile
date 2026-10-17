@@ -1,0 +1,43 @@
+[window]
+command=xdotool getwindowfocus getwindowname
+interval=1
+
+
+[weather]
+command=$HOME/script/weather.sh
+interval=3000
+
+[volume]
+command=printf "Vol "; $HOME/script/get_vol.sh
+signal=12
+interval=once
+
+[brightness]
+command=printf "Bri "; $HOME/script/backlight.sh
+signal=11
+interval=once
+
+[memory]
+command=free -h | awk '/^Mem:/ {print "RAM " $3 "/" $2}'
+interval=10
+
+[cpu]
+command=printf "CPU "; $HOME/script/cpu_usage.sh
+interval=10
+
+[power]
+command=printf "Power "; $HOME/script/power_status.sh
+interval=10
+
+[battery]
+command=printf "Bat "; $HOME/script/bat_capacity.sh
+interval=10
+
+[network]
+command=$HOME/script/wifi_info.sh
+signal=10
+interval=once
+
+[time]
+command=date "+%A %Y-%m-%d %H:%M"
+interval=10

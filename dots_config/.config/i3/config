@@ -8,10 +8,10 @@ default_floating_border pixel 2
 hide_edge_borders smart
 
 # class                 border  bground  text    indicator  child_border
-client.focused          #ff4722 #ff4722  #eeeeee #ff4722    #ff4722
+client.focused          #ff0000 #ff0000  #eeeeee #ff0000    #ff0000
 client.focused_inactive #444444 #222222  #bbbbbb #444444    #444444
 client.unfocused        #444444 #222222  #bbbbbb #444444    #444444
-client.urgent           #ff4722 #ff4722  #eeeeee #ff4722    #ff4722
+client.urgent           #ff0000 #ff0000  #eeeeee #ff0000    #ff0000
 client.placeholder      #444444 #222222  #bbbbbb #444444    #444444
 client.background       #222222
 
@@ -79,11 +79,11 @@ bindsym $mod+period focus output right
 bindsym $mod+Shift+comma move container to output left
 bindsym $mod+Shift+period move container to output right
 
-bindsym XF86AudioRaiseVolume exec --no-startup-id "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+"
-bindsym XF86AudioLowerVolume exec --no-startup-id "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
+bindsym XF86AudioRaiseVolume exec --no-startup-id "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+ && pkill -RTMIN+12 i3blocks"
+bindsym XF86AudioLowerVolume exec --no-startup-id "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%- && pkill -RTMIN+12 i3blocks"
 bindsym XF86AudioMute exec --no-startup-id "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
-bindsym XF86MonBrightnessUp exec --no-startup-id "brightnessctl set 10%+"
-bindsym XF86MonBrightnessDown exec --no-startup-id "brightnessctl set 10%-"
+bindsym XF86MonBrightnessUp exec --no-startup-id "brightnessctl set 10%+ && pkill -RTMIN+11 i3blocks"
+bindsym XF86MonBrightnessDown exec --no-startup-id "brightnessctl set 10%- && pkill -RTMIN+11 i3blocks"
 
 bindsym Print exec --no-startup-id "maim -s | xclip -selection clipboard -t image/png"
 
@@ -92,16 +92,16 @@ bindsym $mod+Shift+q exit
 
 bar {
     position top
-    status_command i3status
+    status_command i3blocks
     font pango:JetBrainsMono Nerd Font, Noto Sans CJK SC, JoyPixels 10
     separator_symbol " | "
     colors {
         background #222222
         statusline #bbbbbb
         separator  #444444
-        focused_workspace  #ff4722 #ff4722 #eeeeee
+        focused_workspace  #ff0000 #ff0000 #eeeeee
         active_workspace   #444444 #222222 #bbbbbb
         inactive_workspace #222222 #222222 #bbbbbb
-        urgent_workspace   #ff4722 #ff4722 #eeeeee
+        urgent_workspace   #ff0000 #ff0000 #eeeeee
     }
 }

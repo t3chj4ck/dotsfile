@@ -23,7 +23,7 @@ fcitx5 -d &
 clipmenud &
 v2rayn &
 # dwmblocks &
-# ~/script/wifi_monitor.sh &
+~/script/wifi_monitor.sh &
 
 
 xinput set-prop "ELAN0677:00 04F3:3196 Touchpad" "libinput Tapping Enabled" 1 &
