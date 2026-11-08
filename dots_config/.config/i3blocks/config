@@ -1,8 +1,3 @@
-[window]
-command=xdotool getwindowfocus getwindowname
-interval=1
-
-
 [weather]
 command=$HOME/script/weather.sh
 interval=3000
@@ -10,7 +5,7 @@ interval=3000
 [volume]
 command=printf "Vol "; $HOME/script/get_vol.sh
 signal=12
-interval=once
+interval=30
 
 [brightness]
 command=printf "Bri "; $HOME/script/backlight.sh
@@ -31,7 +26,7 @@ interval=10
 
 [battery]
 command=printf "Bat "; $HOME/script/bat_capacity.sh
-interval=10
+interval=30
 
 [network]
 command=$HOME/script/wifi_info.sh

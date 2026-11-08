@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+
+#path
+export PATH="$PATH:$HOME/.local/share/flatpak/exports/bin:/var/lib/flatpak/exports/bin"
+
 # Set input method environment variables
 export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
@@ -10,5 +14,6 @@ export GLFW_IM_MODULE=ibus
 export CM_LAUNCHER=rofi
 export MOZ_USE_XINPUT2=1
 export XDG_SESSION_TYPE=x11
+export QT_QPA_PLATFORMTHEME=qt6ct
 # Update DBus environment
 dbus-update-activation-environment --systemd --all
