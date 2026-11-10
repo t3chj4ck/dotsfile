@@ -11,12 +11,12 @@ default_floating_border pixel 2
 # hide_edge_borders smart
 
 # class                 border  bground  text    indicator  child_border
-client.focused          #ff0000 #ff0000  #eeeeee #ff0000    #ff0000
-client.focused_inactive #444444 #222222  #bbbbbb #444444    #444444
-client.unfocused        #444444 #222222  #bbbbbb #444444    #444444
-client.urgent           #ff0000 #ff0000  #eeeeee #ff0000    #ff0000
-client.placeholder      #444444 #222222  #bbbbbb #444444    #444444
-client.background       #222222
+client.focused          #fe8019 #fe8019 #282828 #282828 #fe8019
+client.focused_inactive #3c3836 #282828 #a89984 #d3869b #282828
+client.unfocused        #3c3836 #282828 #a89984 #d3869b #282828
+client.urgent           #fb4934 #cc241d #fbf1c7 #fb4934 #cc241d
+client.placeholder      #3c3836 #282828 #a89984 #d3869b #282828
+client.background       #282828
 
 floating_modifier $mod
 

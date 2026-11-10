@@ -16,7 +16,6 @@ amd-ucode
 android-tools
 aom
 appstream
-aquamarine
 archlinux-keyring
 ark
 atkmm
@@ -195,7 +194,6 @@ greetd
 greetd-agreety
 greetd-tuigreet
 grep
-grim
 groff
 gsettings-desktop-schemas
 gsettings-system-schemas
@@ -235,16 +233,11 @@ hunspell
 hwdata
 hwloc
 hyphen
-hyprcursor
 hyprgraphics
 hypridle
-hyprland
-hyprland-guiutils
 hyprlang
 hyprlock
-hyprtoolkit
 hyprutils
-hyprwire
 i3blocks
 i3lock
 i3status
@@ -455,7 +448,6 @@ libksba
 liblc3
 libldac
 libldap
-libliftoff
 liblqr
 liblsan
 libluv
@@ -681,7 +673,6 @@ msgpack-c
 mtdev
 mtools
 mujs
-muparser
 nano
 ncdu
 ncurses
@@ -770,7 +761,6 @@ pps-tools
 procps-ng
 protobuf
 psmisc
-pugixml
 python
 python-absl
 python-argcomplete
@@ -912,7 +902,6 @@ sdl2-compat
 sdl2_image
 sdl3
 seabios
-seatd
 sed
 semver
 serd
@@ -922,7 +911,6 @@ shared-mime-info
 simdjson
 slang
 slop
-slurp
 smbclient
 snappy
 sndio
@@ -950,7 +938,6 @@ strace
 sudo
 svt-av1
 swappy
-sway
 swaybg
 swayidle
 swaylock
@@ -977,7 +964,6 @@ tlp
 tlp-pd
 tlp-rdw
 tlpui
-tomlplusplus
 tpm2-tss
 tree-sitter
 tree-sitter-c
@@ -1035,7 +1021,6 @@ wireplumber
 wireshark-cli
 wireshark-qt
 wl-clipboard
-wlroots0.20
 woff2
 woff2-font-awesome
 wofi
@@ -1047,7 +1032,6 @@ xcb-imdkit
 xcb-proto
 xcb-util
 xcb-util-cursor
-xcb-util-errors
 xcb-util-image
 xcb-util-keysyms
 xcb-util-renderutil
@@ -1058,7 +1042,6 @@ xcur2png
 xdg-dbus-proxy
 xdg-desktop-portal
 xdg-desktop-portal-gtk
-xdg-desktop-portal-hyprland
 xdg-utils
 xdotool
 xfsprogs
