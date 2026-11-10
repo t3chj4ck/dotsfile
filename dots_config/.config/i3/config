@@ -1,3 +1,6 @@
+workspace "10" output HDMI-1
+
+
 set $mod Mod4
 set $term kitty
 set $menu rofi -show run
@@ -5,7 +8,7 @@ set $menu rofi -show run
 font pango:JetBrainsMono Nerd Font, Noto Sans CJK SC, JoyPixels 10
 default_border pixel 2
 default_floating_border pixel 2
-hide_edge_borders smart
+# hide_edge_borders smart
 
 # class                 border  bground  text    indicator  child_border
 client.focused          #ff0000 #ff0000  #eeeeee #ff0000    #ff0000
@@ -17,7 +20,7 @@ client.background       #222222
 
 floating_modifier $mod
 
-focus_follows_mouse no
+focus_follows_mouse yes
 workspace_auto_back_and_forth no
 
 # term/menu
@@ -64,6 +67,8 @@ bindsym $mod+6 workspace number 6
 bindsym $mod+7 workspace number 7
 bindsym $mod+8 workspace number 8
 bindsym $mod+9 workspace number 9
+bindsym $mod+0 workspace number 10
+bindsym $mod+Shift+0 move container to workspace number 10
 bindsym $mod+Shift+1 move container to workspace number 1
 bindsym $mod+Shift+2 move container to workspace number 2
 bindsym $mod+Shift+3 move container to workspace number 3

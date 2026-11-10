@@ -16,9 +16,7 @@ amd-ucode
 android-tools
 aom
 appstream
-appstream-qt
 aquamarine
-archlinux-appstream-data
 archlinux-keyring
 ark
 atkmm
@@ -35,6 +33,7 @@ baloo-widgets
 base
 base-devel
 bash
+bazaar
 bc
 bcg729
 bear
@@ -95,8 +94,6 @@ desktop-file-utils
 device-mapper
 dhcpcd
 diffutils
-discount
-discover
 dmenu
 dnsmasq
 docker
@@ -179,6 +176,7 @@ glm
 glslang
 glu
 glycin
+glycin-gtk4
 gmp
 gnulib-l10n
 gnupg
@@ -217,6 +215,7 @@ gtk-layer-shell
 gtkmm3
 gtkmm-4.0
 gtksourceview4
+gtksourceview5
 gtk-update-icon-cache
 gtk-vnc
 guile
@@ -224,6 +223,7 @@ gupnp
 gupnp-igd
 gzip
 harfbuzz
+harfbuzz-icu
 hdf5
 hdparm
 hicolor-icon-theme
@@ -234,6 +234,7 @@ hugo
 hunspell
 hwdata
 hwloc
+hyphen
 hyprcursor
 hyprgraphics
 hypridle
@@ -272,7 +273,6 @@ jq
 json-c
 jsoncpp
 json-glib
-kaccounts-integration
 karchive
 kbd
 kbookmarks
@@ -285,6 +285,8 @@ kconfigwidgets
 kcoreaddons
 kcrash
 kdbusaddons
+kde-cli-tools
+kdesu
 kdnssd
 kdsoap
 kdsoap-ws-discovery-client
@@ -298,8 +300,6 @@ kidletime
 kio
 kio-extras
 kirigami
-kirigami-addons
-kitemmodels
 kitemviews
 kitty
 kitty-shell-integration
@@ -313,10 +313,9 @@ kparts
 kpty
 krb5
 kservice
-kstatusnotifieritem
-ksvg
 ktextwidgets
 kuserfeedback
+kvantum
 kwallet
 kwidgetsaddons
 kwindowsystem
@@ -352,8 +351,7 @@ lib32-openssl
 lib32-p11-kit
 lib32-zlib
 lib32-zstd
-libaccounts-glib
-libaccounts-qt
+libadwaita
 libaec
 libaemu
 libaio
@@ -405,6 +403,7 @@ libdbusmenu-gtk3
 libde265
 libdecor
 libdeflate
+libdex
 libdisplay-info
 libdovi
 libdrm
@@ -462,6 +461,7 @@ liblsan
 libluv
 libmakepkg-dropins
 libmalcontent
+libmanette
 libmatio
 libmaxminddb
 libmbim
@@ -667,6 +667,7 @@ mdadm
 media-player-info
 mesa
 meson
+ministream
 minizip
 mkinitcpio
 mkinitcpio-busybox
@@ -770,7 +771,6 @@ procps-ng
 protobuf
 psmisc
 pugixml
-purpose
 python
 python-absl
 python-argcomplete
@@ -832,7 +832,6 @@ python-wheel
 python-yaml
 qalculate-gtk
 qca-qt6
-qcoro
 qemu-audio-alsa
 qemu-audio-dbus
 qemu-audio-jack
@@ -892,12 +891,11 @@ qt6-translations
 qt6-wayland
 qt6-webchannel
 qt6-webengine
-qt6-websockets
-qt6-webview
 rav1e
 rdma-core
 re2
 readline
+redshift
 remmina
 ripgrep
 ripgrep-all
@@ -921,10 +919,6 @@ serd
 shaderc
 shadow
 shared-mime-info
-signond
-signon-kwallet-extension
-signon-plugin-oauth2
-signon-ui
 simdjson
 slang
 slop
@@ -1032,6 +1026,7 @@ waybar
 wayland
 wayland-protocols
 wayland-utils
+webkitgtk-6.0
 webrtc-audio-processing-1
 wev
 wget
@@ -1041,6 +1036,7 @@ wireshark-cli
 wireshark-qt
 wl-clipboard
 wlroots0.20
+woff2
 woff2-font-awesome
 wofi
 wolfssl
@@ -1086,6 +1082,7 @@ xorg-xrandr
 xorg-xrdb
 xorg-xset
 xorg-xwayland
+xorg-xwininfo
 xsel
 xss-lock
 xvidcore

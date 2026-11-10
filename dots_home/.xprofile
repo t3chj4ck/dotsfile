@@ -4,6 +4,13 @@
 #path
 export PATH="$PATH:$HOME/.local/share/flatpak/exports/bin:/var/lib/flatpak/exports/bin"
 
+
+#v2rayn
+export ALL_PROXY=socks5h://127.0.0.1:10808
+export HTTP_PROXY=http://127.0.0.1:10808
+export HTTPS_PROXY=http://127.0.0.1:10808
+export NO_PROXY=localhost,127.0.0.1,::1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12
+
 # Set input method environment variables
 export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
@@ -15,5 +22,7 @@ export CM_LAUNCHER=rofi
 export MOZ_USE_XINPUT2=1
 export XDG_SESSION_TYPE=x11
 export QT_QPA_PLATFORMTHEME=qt6ct
+export QT_STYLE_OVERRIDE=kvantum
+export XDG_MENU_PREFIX=arch-
 # Update DBus environment
 dbus-update-activation-environment --systemd --all
