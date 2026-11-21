@@ -19,6 +19,6 @@ selected=$(
 )
 
 if [ -n "$selected" ]; then
-	feh --bg-scale "$WALL_DIR/$selected" &
+	feh --bg-fill "$WALL_DIR/$selected" &
 	echo "$WALL_DIR/$selected" > ~/script/wallpaper_dir 
 fi

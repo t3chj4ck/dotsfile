@@ -18,14 +18,14 @@ dunst &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 # udiskie &
 feh --bg-scale "$(cat ~/script/wallpaper_dir)" &
-picom -b &
+# picom -b &
 fcitx5 -d &
 clipmenud &
 # dwmblocks &
 ~/script/wifi_monitor.sh &
 ~/script/no_lock.sh &
-nm-applet &
-blueman-applet &
+# nm-applet &
+# blueman-applet &
 io.github._2dust.v2rayN &
 
 
