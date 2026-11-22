@@ -1,24 +1,22 @@
 #!/usr/bin/env bash
 
 WALL_DIR="$HOME/Pictures/wallpaper"
-CACHE_DIR="$HOME/.cache/awww_rofi_thumbs"
 
-mkdir -p "$CACHE_DIR"
+view_and_select() {
+	tmp_file=$(mktemp)
+	kitty -e yazi "$WALL_DIR" --chooser-file="$tmp_file"
+	file_path=$(cat $tmp_file)
+}
 
-selected=$(
-	find "$WALL_DIR" -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" -o -iname "*.webp" -o -iname "*.gif" \) | while read -r img; do
-		basename=$(basename "$img")
-		thumb="$CACHE_DIR/${basename}.png"
-		#thumb
-		if [ ! -f "$thumb" ] || [ "$img" -nt "$thumb" ]; then
-			magick "$img" -resize 320x180^ -gravity center -extent 320x180 "$thumb"
-		fi
+wallpaper() {
+	if [[ ${file_path##*.} == gif ]]; then
+		pkill mpv
+		mpv --wid=0 --loop --no-audio --really-quiet "$file_path"
+	else
+		feh --bg-fill "$file_path"
+	fi
+}
 
-		printf "%s\0icon\x1f%s\n" "$basename" "$thumb"
-	done | rofi -dmenu -show-icons -p -theme ~/.config/rofi/rofi-wallpaper.rasi "wallpaper"
-)
 
-if [ -n "$selected" ]; then
-	feh --bg-fill "$WALL_DIR/$selected" &
-	echo "$WALL_DIR/$selected" > ~/script/wallpaper_dir 
-fi
+view_and_select
+wallpaper
