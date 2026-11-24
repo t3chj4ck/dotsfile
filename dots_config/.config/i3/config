@@ -36,6 +36,7 @@ bindsym $mod+b bar mode toggle
 bindsym $mod+j focus next
 bindsym $mod+k focus prev
 
+
 bindsym $mod+Shift+r reload
 
 
@@ -49,13 +50,16 @@ bindsym $mod+Tab workspace back_and_forth
 ##### dwm Alt+F4 killclient #####
 bindsym Mod1+F4 kill
 
-bindsym $mod+space layout toggle split tabbed stacking
+# bindsym $mod+space layout toggle splith tabbed stacking
+
+
+bindsym $mod+t layout toggle splith tabbed
 # dwm Mod+t tile / Mod+f floating / Mod+m monocle
-bindsym $mod+t layout default
-bindsym $mod+f floating toggle
+# bindsym $mod+t layout default
+bindsym $mod+f split toggle
 bindsym $mod+m fullscreen toggle
 # dwm togglefloating
-bindsym $mod+Shift+space floating toggle
+bindsym $mod+space floating toggle
 bindsym $mod+h resize shrink width 32 px or 5 ppt
 bindsym $mod+l resize grow width 32 px or 5 ppt
 
@@ -70,6 +74,9 @@ bindsym $mod+7 workspace number 7
 bindsym $mod+8 workspace number 8
 bindsym $mod+9 workspace number 9
 bindsym $mod+0 workspace number 10
+bindsym $mod+Next workspace next
+bindsym $mod+Prior workspace prev
+
 bindsym $mod+Shift+0 move container to workspace number 10
 bindsym $mod+Shift+1 move container to workspace number 1
 bindsym $mod+Shift+2 move container to workspace number 2

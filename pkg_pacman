@@ -26,6 +26,7 @@ attr
 audit
 autoconf
 automake
+autotiling
 avahi
 avahi-gtk
 baloo
@@ -818,6 +819,7 @@ python-gobject
 python-h11
 python-httpcore
 python-httpx
+python-i3ipc
 python-idna
 python-importlib-metadata
 python-ipykernel
@@ -894,6 +896,7 @@ python-wcwidth
 python-webencodings
 python-websocket-client
 python-wheel
+python-xlib
 python-yaml
 python-zipp
 qalculate-gtk
